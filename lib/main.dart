@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'super_sale',
         theme: ThemeData(primarySwatch: Colors.blue),
-        initialRoute: '/login',
+        initialRoute: '/company',
         routes: {
           '/login': (context) => const LoginPage(),
           '/registration': (context) => const RegistrationPage(),
