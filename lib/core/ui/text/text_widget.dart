@@ -3,7 +3,7 @@ part of '../ui.dart';
 class TextWidget extends StatelessWidget {
   final String text;
   final Color color;
-  final double? fontSize;
+  final double fontSize;
   final FontWeight? fontWeight;
 
   TextWidget({

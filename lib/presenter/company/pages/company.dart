@@ -58,7 +58,7 @@ class CompanyPage extends StatelessWidget {
             TextWidget(
               text: "gdfgsd",
               color: Colors.black,
-              fontSize: 30,
+              fontSize: 16,
               fontWeight: FontWeight.bold,
 
             )
