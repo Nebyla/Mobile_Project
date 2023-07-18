@@ -3,8 +3,12 @@ import 'package:dio/dio.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/gestures.dart';
 
+import '../../../core/ui/ui.dart';
+
 class CompanyPage extends StatelessWidget {
   const CompanyPage({super.key});
+
+  final Seles = "привет";
 
   @override
   Widget build(BuildContext context) {
@@ -28,27 +32,36 @@ class CompanyPage extends StatelessWidget {
               ),
             ),
             Container(
-              child: Row(
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  IconButton(
-                    icon: Icon(Icons.add_alert_rounded),
-                    iconSize: 30,
-                    onPressed: () {
-                      // Обработка нажатия на иконку меню
-                    },
-                  ),
-                  IconButton(
-                    icon: Icon(Icons.account_circle),
-                    iconSize: 30,
-                    onPressed: () {
-                      // Обработка нажатия на иконку меню
-                    },
-                  ),
-                ],
-              ),
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.add_alert_rounded),
+                      iconSize: 30,
+                      onPressed: () {
+                        // Обработка нажатия на иконку меню
+                      },
+                    ),
+                    IconButton(
+                      icon: Icon(Navigation_Icon.flash),
+                      iconSize: 30,
+                      onPressed: () {
+                        // Обработка нажатия на иконку меню
+                      },
+                    ),
+                  ],
+                ),
+
 
             ),
+
+            TextWidget(
+              text: "gdfgsd",
+              color: Colors.black,
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+
+            )
 
           ],
         ),

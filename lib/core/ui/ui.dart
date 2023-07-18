@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 part 'bottom/company_create_botton.dart';
 part 'bottom/create_product_bottom.dart';
 part 'bottom/login_bottom.dart';
@@ -14,6 +16,5 @@ part 'input/email_inputs.dart';
 part 'input/fio_inputs.dart';
 part 'input/name_company_inputs.dart';
 part 'input/password_input.dart';
-part 'text/mail_sender.dart';
-part 'text/my_company.dart';
-part 'text/registration_good.dart';
+part 'text/text_widget.dart';
+part 'Icons/navigation_icons.dart';
