@@ -2,7 +2,6 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
-import '../../../../data/datasorces/Auth/auth_remoute_datasorses.dart';
 import 'form_sumbission_status.dart';
 
 
@@ -27,18 +26,18 @@ class UserLoginBloc extends Bloc<UserLoginEvent, UserLoginState> {
   _onLogin(SignInButtonPressedEvent event, Emitter<UserLoginState> emit) async {
     emit(state.copyWith(formStatus: FormSubmitting()));
 
-    try{
-      bool loginUser = await login(event.email, event.password);
-      if (loginUser){
-        emit(state.copyWith(formStatus: SubmissionSuccess()));
-      }
-      else {
-        emit(state.copyWith(formStatus: SubmissionFailure()));
-        emit(state.copyWith(formStatus: const InitialFormStatus()));
-      }
-    }catch(error){
-      emit(state.copyWith(formStatus: SubmissionFailed(error)));
-    }
+    // try{
+    //   bool loginUser = await login(event.email, event.password);
+    //   if (loginUser){
+    //     emit(state.copyWith(formStatus: SubmissionSuccess()));
+    //   }
+    //   else {
+    //     emit(state.copyWith(formStatus: SubmissionFailure()));
+    //     emit(state.copyWith(formStatus: const InitialFormStatus()));
+    //   }
+    // }catch(error){
+    //   emit(state.copyWith(formStatus: SubmissionFailed(error)));
+    // }
   }
 
   // _onReset(

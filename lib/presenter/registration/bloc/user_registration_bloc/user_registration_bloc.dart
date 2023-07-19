@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 import 'package:equatable/equatable.dart';
-import 'package:super_saler/data/datasorces/Auth/auth_remoute_datasorses.dart';
+
 
 part 'user_registration_event.dart';
 
@@ -59,15 +59,15 @@ class UserRegistrationBloc
     emit(state.copyWith(isLoading: true));
 
     try {
-      bool registrationUser = await registration(event.firstName,
-          event.lastName, event.middleName, event.email, event.password);
-      if (registrationUser) {
-        bool sendMailUser = await sendMail(event.email, event.password);
+      // bool registrationUser = await registration(event.firstName,
+      //     event.lastName, event.middleName, event.email, event.password);
+      // if (registrationUser) {
+      //   bool sendMailUser = await sendMail(event.email, event.password);
 
-        if (sendMailUser) {
-          emit(state.copyWith(sendEmail: true));
-        }
-      }
+      //   if (sendMailUser) {
+      //     emit(state.copyWith(sendEmail: true));
+      //   }
+      // }
     } catch (e) {
       debugPrint('newError: $e');
     }
