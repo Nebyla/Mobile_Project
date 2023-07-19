@@ -32,27 +32,35 @@ class CompanyPage extends StatelessWidget {
               ),
             ),
             Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    IconButton(
-                      icon: FlashNavigationIcon(color: Colors.yellow,size: 30,),
-                      // iconSize: 30,
-                      onPressed: () {
-                        // Обработка нажатия на иконку меню
-                      },
-                    ),
-                    IconButton(
-                      icon: CompanyNavigationIcon(color: Colors.yellow,size: 20,),
-                      iconSize: 30,
-                      onPressed: () {
-                        // Обработка нажатия на иконку меню
-                      },
-                    ),
-                  ],
-                ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+
+                  IconButton(
+                    icon: FlashNavigationIcon(color: Colors.yellow, size: 30,),
+                    // iconSize: 30,
+                    onPressed: () {
+                      // Обработка нажатия на иконку меню
+                    },
+                  ),
+                  IconButton(
+                    icon: CompanyNavigationIcon(
+                      color: Colors.yellow, size: 20,),
+                    iconSize: 30,
+                    onPressed: () {
+                      // Обработка нажатия на иконку меню
+                    },
+                  ),
+                ],
+              ),
 
 
+            ),
+            ButtonText(
+              onPressed: null,
+              text: 'Hiiii',
+              fontSize: 15,
+              fontFamily: 'Nexa',
             ),
 
             TextWidget(
@@ -62,6 +70,7 @@ class CompanyPage extends StatelessWidget {
               fontWeight: FontWeight.bold,
 
             )
+
 
           ],
         ),
