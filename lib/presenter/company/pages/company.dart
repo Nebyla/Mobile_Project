@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:dio/dio.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter/gestures.dart';
+
 
 import '../../../core/ui/ui.dart';
 
@@ -35,9 +33,11 @@ class CompanyPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-
                   IconButton(
-                    icon: FlashNavigationIcon(color: Colors.yellow, size: 30,),
+                    icon: FlashNavigationIcon(
+                      color: Colors.yellow,
+                      size: 30,
+                    ),
                     // iconSize: 30,
                     onPressed: () {
                       // Обработка нажатия на иконку меню
@@ -45,7 +45,9 @@ class CompanyPage extends StatelessWidget {
                   ),
                   IconButton(
                     icon: CompanyNavigationIcon(
-                      color: Colors.yellow, size: 20,),
+                      color: Colors.yellow,
+                      size: 20,
+                    ),
                     iconSize: 30,
                     onPressed: () {
                       // Обработка нажатия на иконку меню
@@ -53,8 +55,6 @@ class CompanyPage extends StatelessWidget {
                   ),
                 ],
               ),
-
-
             ),
             ButtonText(
               onPressed: null,
@@ -62,16 +62,16 @@ class CompanyPage extends StatelessWidget {
               fontSize: 15,
               fontFamily: 'Nexa',
             ),
-
+            PrimaryButton(
+              text: 'GFDGDFH',
+              onPressed: null,
+            ),
             TextWidget(
               text: "gdfgsd",
               color: Colors.black,
               fontSize: 16,
               fontWeight: FontWeight.bold,
-
             )
-
-
           ],
         ),
       ),
