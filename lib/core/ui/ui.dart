@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 part 'bottom/company_create_botton.dart';
 part 'bottom/create_product_bottom.dart';
 part 'bottom/login_bottom.dart';
@@ -17,4 +18,14 @@ part 'input/fio_inputs.dart';
 part 'input/name_company_inputs.dart';
 part 'input/password_input.dart';
 part 'text/text_widget.dart';
-part 'Icons/navigation_icons.dart';
+part 'Icons/company_navigation_icon.dart';
+part 'Icons/setting_navigation_icon.dart';
+part 'Icons/flash_navigation_icon.dart';
+part 'Icons/pay_navigation_icon.dart';
+part 'Icons/shop_navigation_icon.dart';
+part 'Icons/person_registration_icon.dart';
+part 'Icons/email_icon.dart';
+part 'Icons/password_icon.dart';
+
+const _kFontFam = 'Navigation_Icon';
+const String? _kFontPkg = null;

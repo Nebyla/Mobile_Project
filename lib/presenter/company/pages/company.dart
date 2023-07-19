@@ -36,14 +36,14 @@ class CompanyPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     IconButton(
-                      icon: Icon(Icons.add_alert_rounded),
-                      iconSize: 30,
+                      icon: FlashNavigationIcon(color: Colors.yellow,size: 30,),
+                      // iconSize: 30,
                       onPressed: () {
                         // Обработка нажатия на иконку меню
                       },
                     ),
                     IconButton(
-                      icon: Icon(Navigation_Icon.flash),
+                      icon: CompanyNavigationIcon(color: Colors.yellow,size: 20,),
                       iconSize: 30,
                       onPressed: () {
                         // Обработка нажатия на иконку меню
