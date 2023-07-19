@@ -1,13 +1,13 @@
 part of '../ui.dart';
 
-class TextButtons extends StatelessWidget {
+class ButtonText extends StatelessWidget {
   final String text;
   final Color color;
   final double fontSize;
   final String? fontFamily;
   final VoidCallback? onPressed;
 
-  const TextButtons({
+  const ButtonText({
     super.key,
     required this.text,
     required this.fontSize,

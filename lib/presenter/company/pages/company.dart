@@ -56,7 +56,7 @@ class CompanyPage extends StatelessWidget {
 
 
             ),
-            TextButtons(
+            ButtonText(
               onPressed: null,
               text: 'Hiiii',
               fontSize: 15,
