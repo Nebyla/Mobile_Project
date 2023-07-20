@@ -207,15 +207,18 @@ class LoginPage extends StatelessWidget {
                       ),
                       const SizedBox(height: 20),
                       Text.rich(
+
                         TextSpan(
                           text: 'Нет аккаунта? ',
                           style: const TextStyle(color: Colors.grey, fontSize: 14),
                           children: <TextSpan>[
                             TextSpan(
+
                               text: 'Создать аккаунт',
                               style: const TextStyle(
                                 color: Color.fromARGB(255, 44, 44, 44),
                                 fontSize: 16,
+
                               ),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
