@@ -4,14 +4,12 @@ class PrimaryButton extends StatelessWidget {
   final String text;
   final Icon? icon;
   final VoidCallback? onPressed;
-  final ButtonStyle? style;
 
   const PrimaryButton({
     super.key,
     required this.text,
     this.icon,
     required this.onPressed,
-    this.style,
   });
 
   @override
