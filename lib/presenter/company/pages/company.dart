@@ -63,7 +63,7 @@ class CompanyPage extends StatelessWidget {
               fontFamily: 'Nexa',
             ),
             PrimaryButton(
-              text: 'GFDGDFH',
+              text: 'dewH',
               onPressed: null,
             ),
             TextWidget(

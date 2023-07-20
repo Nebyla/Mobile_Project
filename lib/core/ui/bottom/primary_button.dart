@@ -18,14 +18,12 @@ class PrimaryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
         onPressed: onPressed,
-        style: ButtonStyle(
-
-          backgroundColor: MaterialStatePropertyAll<Color>(Color.fromARGB(255, 44, 44, 44)),
-          minimumSize: MaterialStateProperty.all(const Size(350, 40)),
-            shape: MaterialStateProperty.all(RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(30),
-            ),
-        ),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: const Color.fromARGB(255, 44, 44, 44),
+          minimumSize: const Size(350, 40),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
           ),
       child: Text(text,style: TextStyle(color:Colors.white),),
 
