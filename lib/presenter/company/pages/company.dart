@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 import '../../../core/ui/ui.dart';
 
 class CompanyPage extends StatelessWidget {
@@ -66,6 +65,26 @@ class CompanyPage extends StatelessWidget {
               text: 'dewH',
               onPressed: null,
             ),
+            Padding(
+              padding: const EdgeInsets.only(top: 10, left: 10, right: 15),
+              child: Form(
+                child: EmailInputs(onChanged: (value) {}),
+
+              ),
+
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 10, left: 10, right: 15),
+              child: Form(
+                child:  FioInputs(
+                    onChanged: (value) {},
+                    labelText: "Фамилия",
+                    hintText: "Иванов"),
+
+              ),
+
+            ),
+
             TextWidget(
               text: "gdfgsd",
               color: Colors.black,
