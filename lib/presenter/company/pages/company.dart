@@ -61,10 +61,12 @@ class CompanyPage extends StatelessWidget {
               fontSize: 15,
               fontFamily: 'Nexa',
             ),
+
             PrimaryButton(
               text: 'dewH',
               onPressed: null,
             ),
+<<<<<<< b2f1b8bcecc86d024b6254c7158d5aa00512217c
             Padding(
               padding: const EdgeInsets.only(top: 10, left: 10, right: 15),
               child: Form(
@@ -85,6 +87,12 @@ class CompanyPage extends StatelessWidget {
 
             ),
 
+=======
+            SecondaryButton(
+                text: 'fsgdsdg',
+                onPressed: null,
+            ),
+>>>>>>> 943685f7880364ec66ed5f3b4a80f6ae3142ca77
             TextWidget(
               text: "gdfgsd",
               color: Colors.black,
