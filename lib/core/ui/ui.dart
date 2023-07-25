@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 
@@ -28,6 +29,7 @@ part 'Icons/email_icon.dart';
 part 'Icons/password_icon.dart';
 part 'bottom/text_button.dart';
 part 'bottom/primary_button.dart';
+part 'bottom/secondary_button.dart';
 
 const _kFontFam = 'Navigation_Icon';
 const String? _kFontPkg = null;
