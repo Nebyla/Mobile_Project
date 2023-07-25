@@ -1,10 +1,10 @@
 part of '../ui.dart';
 
 class PasswordIcon extends StatelessWidget {
-  final Color color;
+  final Color? color;
   final double? size;
 
-  const PasswordIcon({super.key, required this.color, this.size});
+  const PasswordIcon({super.key, this.color, this.size});
 
   @override
   Widget build(BuildContext context) {
