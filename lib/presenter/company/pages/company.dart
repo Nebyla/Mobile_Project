@@ -10,8 +10,8 @@ class CompanyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
+      body: ListView(children: [
+        Column(
           children: [
             Container(
               height: 60, // Высота полоски
@@ -61,47 +61,35 @@ class CompanyPage extends StatelessWidget {
               fontSize: 15,
               fontFamily: 'Nexa',
             ),
-
             PrimaryButton(
               text: 'dewH',
               onPressed: null,
             ),
-<<<<<<< b2f1b8bcecc86d024b6254c7158d5aa00512217c
             Padding(
               padding: const EdgeInsets.only(top: 10, left: 10, right: 15),
               child: Form(
                 child: EmailInputs(onChanged: (value) {}),
-
               ),
-
             ),
             Padding(
               padding: const EdgeInsets.only(top: 10, left: 10, right: 15),
               child: Form(
-                child:  FioInputs(
+                child: FioInputs(
                     onChanged: (value) {},
                     labelText: "Фамилия",
                     hintText: "Иванов"),
-
               ),
-
             ),
-
-=======
-            SecondaryButton(
-                text: 'fsgdsdg',
-                onPressed: null,
-            ),
->>>>>>> 943685f7880364ec66ed5f3b4a80f6ae3142ca77
+            CompanyCreateDialog(),
             TextWidget(
               text: "gdfgsd",
               color: Colors.black,
               fontSize: 16,
               fontWeight: FontWeight.bold,
-            )
+            ),
           ],
         ),
-      ),
+      ]),
     );
   }
 }
