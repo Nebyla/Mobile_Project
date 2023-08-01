@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'login_request_dto.dart';
+part of 'mail_sender_request_dto.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,38 +14,39 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-LoginRequestDTO _$LoginRequestDTOFromJson(Map<String, dynamic> json) {
-  return _LoginRequestDTO.fromJson(json);
+MailSenderRequestDTO _$MailSenderRequestDTOFromJson(Map<String, dynamic> json) {
+  return _MailSenderRequestDTO.fromJson(json);
 }
 
 /// @nodoc
-mixin _$LoginRequestDTO {
-  @JsonKey(name: "email")
+mixin _$MailSenderRequestDTO {
+  @JsonKey(name: 'email')
   String get email => throw _privateConstructorUsedError;
-  @JsonKey(name: "password")
+  @JsonKey(name: 'password')
   String get password => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $LoginRequestDTOCopyWith<LoginRequestDTO> get copyWith =>
+  $MailSenderRequestDTOCopyWith<MailSenderRequestDTO> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $LoginRequestDTOCopyWith<$Res> {
-  factory $LoginRequestDTOCopyWith(
-          LoginRequestDTO value, $Res Function(LoginRequestDTO) then) =
-      _$LoginRequestDTOCopyWithImpl<$Res, LoginRequestDTO>;
+abstract class $MailSenderRequestDTOCopyWith<$Res> {
+  factory $MailSenderRequestDTOCopyWith(MailSenderRequestDTO value,
+          $Res Function(MailSenderRequestDTO) then) =
+      _$MailSenderRequestDTOCopyWithImpl<$Res, MailSenderRequestDTO>;
   @useResult
   $Res call(
-      {@JsonKey(name: "email") String email,
-      @JsonKey(name: "password") String password});
+      {@JsonKey(name: 'email') String email,
+      @JsonKey(name: 'password') String password});
 }
 
 /// @nodoc
-class _$LoginRequestDTOCopyWithImpl<$Res, $Val extends LoginRequestDTO>
-    implements $LoginRequestDTOCopyWith<$Res> {
-  _$LoginRequestDTOCopyWithImpl(this._value, this._then);
+class _$MailSenderRequestDTOCopyWithImpl<$Res,
+        $Val extends MailSenderRequestDTO>
+    implements $MailSenderRequestDTOCopyWith<$Res> {
+  _$MailSenderRequestDTOCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -72,24 +73,24 @@ class _$LoginRequestDTOCopyWithImpl<$Res, $Val extends LoginRequestDTO>
 }
 
 /// @nodoc
-abstract class _$$_LoginRequestDTOCopyWith<$Res>
-    implements $LoginRequestDTOCopyWith<$Res> {
-  factory _$$_LoginRequestDTOCopyWith(
-          _$_LoginRequestDTO value, $Res Function(_$_LoginRequestDTO) then) =
-      __$$_LoginRequestDTOCopyWithImpl<$Res>;
+abstract class _$$_MailSenderRequestDTOCopyWith<$Res>
+    implements $MailSenderRequestDTOCopyWith<$Res> {
+  factory _$$_MailSenderRequestDTOCopyWith(_$_MailSenderRequestDTO value,
+          $Res Function(_$_MailSenderRequestDTO) then) =
+      __$$_MailSenderRequestDTOCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
-      {@JsonKey(name: "email") String email,
-      @JsonKey(name: "password") String password});
+      {@JsonKey(name: 'email') String email,
+      @JsonKey(name: 'password') String password});
 }
 
 /// @nodoc
-class __$$_LoginRequestDTOCopyWithImpl<$Res>
-    extends _$LoginRequestDTOCopyWithImpl<$Res, _$_LoginRequestDTO>
-    implements _$$_LoginRequestDTOCopyWith<$Res> {
-  __$$_LoginRequestDTOCopyWithImpl(
-      _$_LoginRequestDTO _value, $Res Function(_$_LoginRequestDTO) _then)
+class __$$_MailSenderRequestDTOCopyWithImpl<$Res>
+    extends _$MailSenderRequestDTOCopyWithImpl<$Res, _$_MailSenderRequestDTO>
+    implements _$$_MailSenderRequestDTOCopyWith<$Res> {
+  __$$_MailSenderRequestDTOCopyWithImpl(_$_MailSenderRequestDTO _value,
+      $Res Function(_$_MailSenderRequestDTO) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -98,7 +99,7 @@ class __$$_LoginRequestDTOCopyWithImpl<$Res>
     Object? email = null,
     Object? password = null,
   }) {
-    return _then(_$_LoginRequestDTO(
+    return _then(_$_MailSenderRequestDTO(
       email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
@@ -113,31 +114,31 @@ class __$$_LoginRequestDTOCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_LoginRequestDTO implements _LoginRequestDTO {
-  const _$_LoginRequestDTO(
-      {@JsonKey(name: "email") required this.email,
-      @JsonKey(name: "password") required this.password});
+class _$_MailSenderRequestDTO implements _MailSenderRequestDTO {
+  const _$_MailSenderRequestDTO(
+      {@JsonKey(name: 'email') required this.email,
+      @JsonKey(name: 'password') required this.password});
 
-  factory _$_LoginRequestDTO.fromJson(Map<String, dynamic> json) =>
-      _$$_LoginRequestDTOFromJson(json);
+  factory _$_MailSenderRequestDTO.fromJson(Map<String, dynamic> json) =>
+      _$$_MailSenderRequestDTOFromJson(json);
 
   @override
-  @JsonKey(name: "email")
+  @JsonKey(name: 'email')
   final String email;
   @override
-  @JsonKey(name: "password")
+  @JsonKey(name: 'password')
   final String password;
 
   @override
   String toString() {
-    return 'LoginRequestDTO(email: $email, password: $password)';
+    return 'MailSenderRequestDTO(email: $email, password: $password)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LoginRequestDTO &&
+            other is _$_MailSenderRequestDTO &&
             (identical(other.email, email) || other.email == email) &&
             (identical(other.password, password) ||
                 other.password == password));
@@ -150,34 +151,35 @@ class _$_LoginRequestDTO implements _LoginRequestDTO {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_LoginRequestDTOCopyWith<_$_LoginRequestDTO> get copyWith =>
-      __$$_LoginRequestDTOCopyWithImpl<_$_LoginRequestDTO>(this, _$identity);
+  _$$_MailSenderRequestDTOCopyWith<_$_MailSenderRequestDTO> get copyWith =>
+      __$$_MailSenderRequestDTOCopyWithImpl<_$_MailSenderRequestDTO>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_LoginRequestDTOToJson(
+    return _$$_MailSenderRequestDTOToJson(
       this,
     );
   }
 }
 
-abstract class _LoginRequestDTO implements LoginRequestDTO {
-  const factory _LoginRequestDTO(
-          {@JsonKey(name: "email") required final String email,
-          @JsonKey(name: "password") required final String password}) =
-      _$_LoginRequestDTO;
+abstract class _MailSenderRequestDTO implements MailSenderRequestDTO {
+  const factory _MailSenderRequestDTO(
+          {@JsonKey(name: 'email') required final String email,
+          @JsonKey(name: 'password') required final String password}) =
+      _$_MailSenderRequestDTO;
 
-  factory _LoginRequestDTO.fromJson(Map<String, dynamic> json) =
-      _$_LoginRequestDTO.fromJson;
+  factory _MailSenderRequestDTO.fromJson(Map<String, dynamic> json) =
+      _$_MailSenderRequestDTO.fromJson;
 
   @override
-  @JsonKey(name: "email")
+  @JsonKey(name: 'email')
   String get email;
   @override
-  @JsonKey(name: "password")
+  @JsonKey(name: 'password')
   String get password;
   @override
   @JsonKey(ignore: true)
-  _$$_LoginRequestDTOCopyWith<_$_LoginRequestDTO> get copyWith =>
+  _$$_MailSenderRequestDTOCopyWith<_$_MailSenderRequestDTO> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -4,8 +4,8 @@ part 'login_response_dto.g.dart';
 part 'login_response_dto.freezed.dart';
 
 @freezed
-class LoginResponse with _$LoginResponse{
-  const factory LoginResponse ({
+class LoginResponseDTO with _$LoginResponseDTO {
+  const factory LoginResponseDTO ({
     @JsonKey(name: "message") // Move the annotation here
     required String message,
 
@@ -14,8 +14,8 @@ class LoginResponse with _$LoginResponse{
 
     @JsonKey(name: "refresh_token") // Move the annotation here
     required String refreshToken,
-  }) = _LoginResponse;
+  }) = _LoginResponseDTO;
 
-  factory LoginResponse.fromJson(Map<String, dynamic> json) =>
-        _$LoginResponseFromJson(json);
+  factory LoginResponseDTO.fromJson(Map<String, dynamic> json) =>
+        _$LoginResponseDTOFromJson(json);
 }
