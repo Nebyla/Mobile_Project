@@ -59,7 +59,7 @@ class CompanyInfoCard extends StatelessWidget{
                 children: [
                   Row(
                     children: [
-                      ProductIcon(color: Colors.indigo),
+                      ProductIcon(color: Colors.indigo,size: 17,),
                       SizedBox(
                         width: 10,
                       ),
@@ -75,7 +75,7 @@ class CompanyInfoCard extends StatelessWidget{
                   ),
                   Row(
                     children: [
-                      UpdateIcon(color: Colors.blue),
+                      UpdateIcon(color: Colors.blue, size: 17),
                       SizedBox(
                         width: 10,
                       ),

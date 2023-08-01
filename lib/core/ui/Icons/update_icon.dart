@@ -24,7 +24,7 @@ class UpdateIcon extends StatelessWidget {
         ),
         child: Icon(Icons.watch_later,
           color: color,
-          size:17,
+          size: size,
         ),
       ),
 

@@ -24,7 +24,7 @@ class ProductIcon extends StatelessWidget {
     ),
     child: Icon(Icons.shopping_basket_rounded,
       color: color,
-      size:17,
+      size: size,
       ),
     ),
 
