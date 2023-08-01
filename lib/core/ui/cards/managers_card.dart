@@ -62,7 +62,7 @@ class ManagerCard extends StatelessWidget{
                 children: [
                   Row(
                     children: [
-                      ManagerIcon(color: Colors.indigo),
+                      ManagerIcon(color: Colors.indigo, size: 17,),
                       SizedBox(
                         width: 10,
                       ),
@@ -80,6 +80,7 @@ class ManagerCard extends StatelessWidget{
                     children: [
                       ExpectationIcon(
                         color: Colors.orangeAccent,
+                        size: 17,
                       ),
                       SizedBox(
                         width: 10,

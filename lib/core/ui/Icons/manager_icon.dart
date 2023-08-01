@@ -24,7 +24,7 @@ class ManagerIcon extends StatelessWidget {
         ),
         child: Icon(Icons.person,
           color: color,
-          size:17,
+          size: size,
         ),
       ),
 

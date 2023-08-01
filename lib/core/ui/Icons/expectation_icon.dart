@@ -24,7 +24,7 @@ class ExpectationIcon extends StatelessWidget {
         ),
         child: Icon(Icons.email,
           color: color,
-          size:17,
+          size: size,
         ),
       ),
 
