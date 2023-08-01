@@ -30,6 +30,8 @@ part 'Icons/password_icon.dart';
 part 'bottom/text_button.dart';
 part 'bottom/primary_button.dart';
 part 'bottom/secondary_button.dart';
+part 'Icons/manager_icon.dart';
+part 'Icons/expectation_icon.dart';
 
 const _kFontFam = 'Navigation_Icon';
 const String? _kFontPkg = null;
