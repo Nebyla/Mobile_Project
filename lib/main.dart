@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final UserLoginBloc authenticationBloc = UserLoginBloc();
     final UserRegistrationBloc registrationBloc = UserRegistrationBloc(onRegistered: () {  });
+
     return MultiBlocProvider(
       providers: [
         BlocProvider<UserLoginBloc>(
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'super_sale',
         theme: ThemeData(primarySwatch: Colors.blue),
         initialRoute: '/company',
