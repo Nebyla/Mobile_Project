@@ -1,21 +1,21 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'mail_sender_request_dto.dart';
+part of 'user_change_password_dto.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MailSenderRequestDTO _$$_MailSenderRequestDTOFromJson(
+_$_UserChangePasswordRequestDTO _$$_UserChangePasswordRequestDTOFromJson(
         Map<String, dynamic> json) =>
-    _$_MailSenderRequestDTO(
-      email: json['email'] as String,
+    _$_UserChangePasswordRequestDTO(
       password: json['password'] as String,
+      newPassword: json['new_password'] as String,
     );
 
-Map<String, dynamic> _$$_MailSenderRequestDTOToJson(
-        _$_MailSenderRequestDTO instance) =>
+Map<String, dynamic> _$$_UserChangePasswordRequestDTOToJson(
+        _$_UserChangePasswordRequestDTO instance) =>
     <String, dynamic>{
-      'email': instance.email,
       'password': instance.password,
+      'new_password': instance.newPassword,
     };

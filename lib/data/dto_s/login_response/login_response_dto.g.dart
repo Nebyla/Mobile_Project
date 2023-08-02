@@ -6,14 +6,14 @@ part of 'login_response_dto.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_LoginResponse _$$_LoginResponseFromJson(Map<String, dynamic> json) =>
-    _$_LoginResponse(
+_$_LoginResponseDTO _$$_LoginResponseDTOFromJson(Map<String, dynamic> json) =>
+    _$_LoginResponseDTO(
       message: json['message'] as String,
       accessToken: json['access_token'] as String,
       refreshToken: json['refresh_token'] as String,
     );
 
-Map<String, dynamic> _$$_LoginResponseToJson(_$_LoginResponse instance) =>
+Map<String, dynamic> _$$_LoginResponseDTOToJson(_$_LoginResponseDTO instance) =>
     <String, dynamic>{
       'message': instance.message,
       'access_token': instance.accessToken,

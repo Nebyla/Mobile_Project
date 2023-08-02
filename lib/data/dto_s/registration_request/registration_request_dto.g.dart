@@ -6,9 +6,9 @@ part of 'registration_request_dto.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_RegistrationRequest _$$_RegistrationRequestFromJson(
+_$_RegistrationRequestDTO _$$_RegistrationRequestDTOFromJson(
         Map<String, dynamic> json) =>
-    _$_RegistrationRequest(
+    _$_RegistrationRequestDTO(
       firstName: json['firstName'] as String,
       lastName: json['lastName'] as String,
       middleName: json['middleName'] as String,
@@ -16,8 +16,8 @@ _$_RegistrationRequest _$$_RegistrationRequestFromJson(
       password: json['password'] as String,
     );
 
-Map<String, dynamic> _$$_RegistrationRequestToJson(
-        _$_RegistrationRequest instance) =>
+Map<String, dynamic> _$$_RegistrationRequestDTOToJson(
+        _$_RegistrationRequestDTO instance) =>
     <String, dynamic>{
       'firstName': instance.firstName,
       'lastName': instance.lastName,

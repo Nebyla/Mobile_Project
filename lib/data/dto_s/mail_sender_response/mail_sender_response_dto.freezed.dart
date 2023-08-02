@@ -14,34 +14,36 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-MailSenderResponse _$MailSenderResponseFromJson(Map<String, dynamic> json) {
-  return _MailSenderResponse.fromJson(json);
+MailSenderResponseDTO _$MailSenderResponseDTOFromJson(
+    Map<String, dynamic> json) {
+  return _MailSenderResponseDTO.fromJson(json);
 }
 
 /// @nodoc
-mixin _$MailSenderResponse {
+mixin _$MailSenderResponseDTO {
   @JsonKey(name: 'message')
   String get message => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $MailSenderResponseCopyWith<MailSenderResponse> get copyWith =>
+  $MailSenderResponseDTOCopyWith<MailSenderResponseDTO> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $MailSenderResponseCopyWith<$Res> {
-  factory $MailSenderResponseCopyWith(
-          MailSenderResponse value, $Res Function(MailSenderResponse) then) =
-      _$MailSenderResponseCopyWithImpl<$Res, MailSenderResponse>;
+abstract class $MailSenderResponseDTOCopyWith<$Res> {
+  factory $MailSenderResponseDTOCopyWith(MailSenderResponseDTO value,
+          $Res Function(MailSenderResponseDTO) then) =
+      _$MailSenderResponseDTOCopyWithImpl<$Res, MailSenderResponseDTO>;
   @useResult
   $Res call({@JsonKey(name: 'message') String message});
 }
 
 /// @nodoc
-class _$MailSenderResponseCopyWithImpl<$Res, $Val extends MailSenderResponse>
-    implements $MailSenderResponseCopyWith<$Res> {
-  _$MailSenderResponseCopyWithImpl(this._value, this._then);
+class _$MailSenderResponseDTOCopyWithImpl<$Res,
+        $Val extends MailSenderResponseDTO>
+    implements $MailSenderResponseDTOCopyWith<$Res> {
+  _$MailSenderResponseDTOCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -63,22 +65,22 @@ class _$MailSenderResponseCopyWithImpl<$Res, $Val extends MailSenderResponse>
 }
 
 /// @nodoc
-abstract class _$$_MailSenderResponseCopyWith<$Res>
-    implements $MailSenderResponseCopyWith<$Res> {
-  factory _$$_MailSenderResponseCopyWith(_$_MailSenderResponse value,
-          $Res Function(_$_MailSenderResponse) then) =
-      __$$_MailSenderResponseCopyWithImpl<$Res>;
+abstract class _$$_MailSenderResponseDTOCopyWith<$Res>
+    implements $MailSenderResponseDTOCopyWith<$Res> {
+  factory _$$_MailSenderResponseDTOCopyWith(_$_MailSenderResponseDTO value,
+          $Res Function(_$_MailSenderResponseDTO) then) =
+      __$$_MailSenderResponseDTOCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: 'message') String message});
 }
 
 /// @nodoc
-class __$$_MailSenderResponseCopyWithImpl<$Res>
-    extends _$MailSenderResponseCopyWithImpl<$Res, _$_MailSenderResponse>
-    implements _$$_MailSenderResponseCopyWith<$Res> {
-  __$$_MailSenderResponseCopyWithImpl(
-      _$_MailSenderResponse _value, $Res Function(_$_MailSenderResponse) _then)
+class __$$_MailSenderResponseDTOCopyWithImpl<$Res>
+    extends _$MailSenderResponseDTOCopyWithImpl<$Res, _$_MailSenderResponseDTO>
+    implements _$$_MailSenderResponseDTOCopyWith<$Res> {
+  __$$_MailSenderResponseDTOCopyWithImpl(_$_MailSenderResponseDTO _value,
+      $Res Function(_$_MailSenderResponseDTO) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -86,7 +88,7 @@ class __$$_MailSenderResponseCopyWithImpl<$Res>
   $Res call({
     Object? message = null,
   }) {
-    return _then(_$_MailSenderResponse(
+    return _then(_$_MailSenderResponseDTO(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -97,12 +99,12 @@ class __$$_MailSenderResponseCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MailSenderResponse implements _MailSenderResponse {
-  const _$_MailSenderResponse(
+class _$_MailSenderResponseDTO implements _MailSenderResponseDTO {
+  const _$_MailSenderResponseDTO(
       {@JsonKey(name: 'message') required this.message});
 
-  factory _$_MailSenderResponse.fromJson(Map<String, dynamic> json) =>
-      _$$_MailSenderResponseFromJson(json);
+  factory _$_MailSenderResponseDTO.fromJson(Map<String, dynamic> json) =>
+      _$$_MailSenderResponseDTOFromJson(json);
 
   @override
   @JsonKey(name: 'message')
@@ -110,14 +112,14 @@ class _$_MailSenderResponse implements _MailSenderResponse {
 
   @override
   String toString() {
-    return 'MailSenderResponse(message: $message)';
+    return 'MailSenderResponseDTO(message: $message)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_MailSenderResponse &&
+            other is _$_MailSenderResponseDTO &&
             (identical(other.message, message) || other.message == message));
   }
 
@@ -128,31 +130,31 @@ class _$_MailSenderResponse implements _MailSenderResponse {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_MailSenderResponseCopyWith<_$_MailSenderResponse> get copyWith =>
-      __$$_MailSenderResponseCopyWithImpl<_$_MailSenderResponse>(
+  _$$_MailSenderResponseDTOCopyWith<_$_MailSenderResponseDTO> get copyWith =>
+      __$$_MailSenderResponseDTOCopyWithImpl<_$_MailSenderResponseDTO>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MailSenderResponseToJson(
+    return _$$_MailSenderResponseDTOToJson(
       this,
     );
   }
 }
 
-abstract class _MailSenderResponse implements MailSenderResponse {
-  const factory _MailSenderResponse(
+abstract class _MailSenderResponseDTO implements MailSenderResponseDTO {
+  const factory _MailSenderResponseDTO(
           {@JsonKey(name: 'message') required final String message}) =
-      _$_MailSenderResponse;
+      _$_MailSenderResponseDTO;
 
-  factory _MailSenderResponse.fromJson(Map<String, dynamic> json) =
-      _$_MailSenderResponse.fromJson;
+  factory _MailSenderResponseDTO.fromJson(Map<String, dynamic> json) =
+      _$_MailSenderResponseDTO.fromJson;
 
   @override
   @JsonKey(name: 'message')
   String get message;
   @override
   @JsonKey(ignore: true)
-  _$$_MailSenderResponseCopyWith<_$_MailSenderResponse> get copyWith =>
+  _$$_MailSenderResponseDTOCopyWith<_$_MailSenderResponseDTO> get copyWith =>
       throw _privateConstructorUsedError;
 }

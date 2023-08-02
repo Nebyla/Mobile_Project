@@ -4,15 +4,15 @@ part 'mail_sender_request_dto.freezed.dart';
 part 'mail_sender_request_dto.g.dart';
 
 @freezed
-class MailSenderRequest with _$MailSenderRequest{
-  const factory MailSenderRequest ({
+class MailSenderRequestDTO with _$MailSenderRequestDTO {
+  const factory MailSenderRequestDTO ({
     @JsonKey(name: 'email')
     required String email,
 
     @JsonKey(name: 'password')
     required String password,
-  }) = _MailSenderRequest;
+  }) = _MailSenderRequestDTO;
 
-  factory MailSenderRequest.fromJson(Map<String, dynamic> json) =>
-      _$MailSenderRequestFromJson(json);
+  factory MailSenderRequestDTO.fromJson(Map<String, dynamic> json) =>
+      _$MailSenderRequestDTOFromJson(json);
 }

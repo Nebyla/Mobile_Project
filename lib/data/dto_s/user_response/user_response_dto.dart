@@ -1,46 +1,41 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+import '../role/role_dto.dart';
+
+
 part 'user_response_dto.g.dart';
 part 'user_response_dto.freezed.dart';
 
 @freezed
-class UserResponse with _$UserResponse{
-  const factory UserResponse ({
+class UserResponseDTO with _$UserResponseDTO {
+  const factory UserResponseDTO ({
     @JsonKey(name: 'id')
     required int id,
 
     @JsonKey(name: 'firstName')
-    required String firstName,
+    required String? firstName,
 
     @JsonKey(name: 'lastName')
-    required String lastName,
+    required String? lastName,
 
     @JsonKey(name: 'middleName')
-    required String middleName,
+    required String? middleName,
 
     @JsonKey(name: 'email')
-    required String email,
+    required String? email,
 
     @JsonKey(name: 'approved')
     required bool approved,
 
-    @JsonKey(name: 'dataJoined')
-    required String data,
+    @JsonKey(name: 'dateJoined')
+    required String? data,
 
     @JsonKey(name: 'role')
-    required Role role,
-  }) = _UserResponse;
+    required RoleDTO role,
+  }) = _UserResponseDTO;
 
-  factory UserResponse.fromJson(Map<String, dynamic> json) =>
-      _$UserResponseFromJson(json);
+  factory UserResponseDTO.fromJson(Map<String, dynamic> json) =>
+      _$UserResponseDTOFromJson(json);
 }
 
-@freezed
-class Role with _$Role {
-  const factory Role({
-    @JsonKey(name: 'id') required int id,
-    @JsonKey(name: 'name') required String name,
-  }) = _Role;
 
-  factory Role.fromJson(Map<String, dynamic> json) => _$RoleFromJson(json);
-}

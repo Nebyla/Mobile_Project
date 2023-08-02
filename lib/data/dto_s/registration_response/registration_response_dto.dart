@@ -4,13 +4,13 @@ part 'registration_response_dto.g.dart';
 part 'registration_response_dto.freezed.dart';
 
 @freezed
-class RegistrationResponse with _$RegistrationResponse {
-  const factory RegistrationResponse({
+class RegistrationResponseDTO with _$RegistrationResponseDTO {
+  const factory RegistrationResponseDTO({
     @JsonKey(name: "message")
     required String message,
 
-  }) = _RegistrationResponse;
+  }) = _RegistrationResponseDTO;
 
-  factory RegistrationResponse.fromJson(Map<String, dynamic> json) =>
-      _$RegistrationResponseFromJson(json);
+  factory RegistrationResponseDTO.fromJson(Map<String, dynamic> json) =>
+      _$RegistrationResponseDTOFromJson(json);
 }
