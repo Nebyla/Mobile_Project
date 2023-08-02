@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:dio/dio.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter/gestures.dart';
 
 import '../../../core/ui/ui.dart';
 
@@ -35,9 +32,11 @@ class CompanyPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-
                   IconButton(
-                    icon: FlashNavigationIcon(color: Colors.yellow, size: 30,),
+                    icon: FlashNavigationIcon(
+                      color: Colors.yellow,
+                      size: 30,
+                    ),
                     // iconSize: 30,
                     onPressed: () {
                       // Обработка нажатия на иконку меню
@@ -45,7 +44,9 @@ class CompanyPage extends StatelessWidget {
                   ),
                   IconButton(
                     icon: CompanyNavigationIcon(
-                      color: Colors.yellow, size: 20,),
+                      color: Colors.yellow,
+                      size: 20,
+                    ),
                     iconSize: 30,
                     onPressed: () {
                       // Обработка нажатия на иконку меню
@@ -53,8 +54,6 @@ class CompanyPage extends StatelessWidget {
                   ),
                 ],
               ),
-
-
             ),
             ButtonText(
               onPressed: null,
@@ -63,15 +62,43 @@ class CompanyPage extends StatelessWidget {
               fontFamily: 'Nexa',
             ),
 
+            PrimaryButton(
+              text: 'dewH',
+              onPressed: null,
+            ),
+<<<<<<< b2f1b8bcecc86d024b6254c7158d5aa00512217c
+            Padding(
+              padding: const EdgeInsets.only(top: 10, left: 10, right: 15),
+              child: Form(
+                child: EmailInputs(onChanged: (value) {}),
+
+              ),
+
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 10, left: 10, right: 15),
+              child: Form(
+                child:  FioInputs(
+                    onChanged: (value) {},
+                    labelText: "Фамилия",
+                    hintText: "Иванов"),
+
+              ),
+
+            ),
+
+=======
+            SecondaryButton(
+                text: 'fsgdsdg',
+                onPressed: null,
+            ),
+>>>>>>> 943685f7880364ec66ed5f3b4a80f6ae3142ca77
             TextWidget(
               text: "gdfgsd",
               color: Colors.black,
               fontSize: 16,
               fontWeight: FontWeight.bold,
-
             )
-
-
           ],
         ),
       ),
