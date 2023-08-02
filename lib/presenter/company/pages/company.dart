@@ -63,10 +63,10 @@ class CompanyPage extends StatelessWidget {
               fontSize: 15,
               fontFamily: 'Nexa',
             ),
-            // PrimaryButton(
-            //   text: 'dewH',
-            //   onPressed: null,
-            // ),
+            PrimaryButton(
+              text: 'dewH',
+              onPressed: null,
+            ),
             Padding(
               padding: const EdgeInsets.only(top: 10, left: 10, right: 15),
               child: Form(
@@ -82,7 +82,17 @@ class CompanyPage extends StatelessWidget {
                     hintText: "Иванов"),
               ),
             ),
-            CompanyInfoCard(),
+            ManagerCard(),
+            SecondaryButton(
+              text: 'fsgdsdg',
+              onPressed: null,
+            ),
+            TextWidget(
+              text: "gdfgsd",
+              color: Colors.black,
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+            )
           ],
         ),
       ),
