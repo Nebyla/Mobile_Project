@@ -14,12 +14,13 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-RegistrationRequest _$RegistrationRequestFromJson(Map<String, dynamic> json) {
-  return _RegistrationRequest.fromJson(json);
+RegistrationRequestDTO _$RegistrationRequestDTOFromJson(
+    Map<String, dynamic> json) {
+  return _RegistrationRequestDTO.fromJson(json);
 }
 
 /// @nodoc
-mixin _$RegistrationRequest {
+mixin _$RegistrationRequestDTO {
   @JsonKey(name: "firstName")
   String get firstName => throw _privateConstructorUsedError;
   @JsonKey(name: "lastName")
@@ -33,15 +34,15 @@ mixin _$RegistrationRequest {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $RegistrationRequestCopyWith<RegistrationRequest> get copyWith =>
+  $RegistrationRequestDTOCopyWith<RegistrationRequestDTO> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $RegistrationRequestCopyWith<$Res> {
-  factory $RegistrationRequestCopyWith(
-          RegistrationRequest value, $Res Function(RegistrationRequest) then) =
-      _$RegistrationRequestCopyWithImpl<$Res, RegistrationRequest>;
+abstract class $RegistrationRequestDTOCopyWith<$Res> {
+  factory $RegistrationRequestDTOCopyWith(RegistrationRequestDTO value,
+          $Res Function(RegistrationRequestDTO) then) =
+      _$RegistrationRequestDTOCopyWithImpl<$Res, RegistrationRequestDTO>;
   @useResult
   $Res call(
       {@JsonKey(name: "firstName") String firstName,
@@ -52,9 +53,10 @@ abstract class $RegistrationRequestCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$RegistrationRequestCopyWithImpl<$Res, $Val extends RegistrationRequest>
-    implements $RegistrationRequestCopyWith<$Res> {
-  _$RegistrationRequestCopyWithImpl(this._value, this._then);
+class _$RegistrationRequestDTOCopyWithImpl<$Res,
+        $Val extends RegistrationRequestDTO>
+    implements $RegistrationRequestDTOCopyWith<$Res> {
+  _$RegistrationRequestDTOCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -96,11 +98,11 @@ class _$RegistrationRequestCopyWithImpl<$Res, $Val extends RegistrationRequest>
 }
 
 /// @nodoc
-abstract class _$$_RegistrationRequestCopyWith<$Res>
-    implements $RegistrationRequestCopyWith<$Res> {
-  factory _$$_RegistrationRequestCopyWith(_$_RegistrationRequest value,
-          $Res Function(_$_RegistrationRequest) then) =
-      __$$_RegistrationRequestCopyWithImpl<$Res>;
+abstract class _$$_RegistrationRequestDTOCopyWith<$Res>
+    implements $RegistrationRequestDTOCopyWith<$Res> {
+  factory _$$_RegistrationRequestDTOCopyWith(_$_RegistrationRequestDTO value,
+          $Res Function(_$_RegistrationRequestDTO) then) =
+      __$$_RegistrationRequestDTOCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -112,11 +114,12 @@ abstract class _$$_RegistrationRequestCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_RegistrationRequestCopyWithImpl<$Res>
-    extends _$RegistrationRequestCopyWithImpl<$Res, _$_RegistrationRequest>
-    implements _$$_RegistrationRequestCopyWith<$Res> {
-  __$$_RegistrationRequestCopyWithImpl(_$_RegistrationRequest _value,
-      $Res Function(_$_RegistrationRequest) _then)
+class __$$_RegistrationRequestDTOCopyWithImpl<$Res>
+    extends _$RegistrationRequestDTOCopyWithImpl<$Res,
+        _$_RegistrationRequestDTO>
+    implements _$$_RegistrationRequestDTOCopyWith<$Res> {
+  __$$_RegistrationRequestDTOCopyWithImpl(_$_RegistrationRequestDTO _value,
+      $Res Function(_$_RegistrationRequestDTO) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -128,7 +131,7 @@ class __$$_RegistrationRequestCopyWithImpl<$Res>
     Object? email = null,
     Object? password = null,
   }) {
-    return _then(_$_RegistrationRequest(
+    return _then(_$_RegistrationRequestDTO(
       firstName: null == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
@@ -155,16 +158,16 @@ class __$$_RegistrationRequestCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_RegistrationRequest implements _RegistrationRequest {
-  const _$_RegistrationRequest(
+class _$_RegistrationRequestDTO implements _RegistrationRequestDTO {
+  const _$_RegistrationRequestDTO(
       {@JsonKey(name: "firstName") required this.firstName,
       @JsonKey(name: "lastName") required this.lastName,
       @JsonKey(name: "middleName") required this.middleName,
       @JsonKey(name: "email") required this.email,
       @JsonKey(name: "password") required this.password});
 
-  factory _$_RegistrationRequest.fromJson(Map<String, dynamic> json) =>
-      _$$_RegistrationRequestFromJson(json);
+  factory _$_RegistrationRequestDTO.fromJson(Map<String, dynamic> json) =>
+      _$$_RegistrationRequestDTOFromJson(json);
 
   @override
   @JsonKey(name: "firstName")
@@ -184,14 +187,14 @@ class _$_RegistrationRequest implements _RegistrationRequest {
 
   @override
   String toString() {
-    return 'RegistrationRequest(firstName: $firstName, lastName: $lastName, middleName: $middleName, email: $email, password: $password)';
+    return 'RegistrationRequestDTO(firstName: $firstName, lastName: $lastName, middleName: $middleName, email: $email, password: $password)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RegistrationRequest &&
+            other is _$_RegistrationRequestDTO &&
             (identical(other.firstName, firstName) ||
                 other.firstName == firstName) &&
             (identical(other.lastName, lastName) ||
@@ -211,29 +214,29 @@ class _$_RegistrationRequest implements _RegistrationRequest {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_RegistrationRequestCopyWith<_$_RegistrationRequest> get copyWith =>
-      __$$_RegistrationRequestCopyWithImpl<_$_RegistrationRequest>(
+  _$$_RegistrationRequestDTOCopyWith<_$_RegistrationRequestDTO> get copyWith =>
+      __$$_RegistrationRequestDTOCopyWithImpl<_$_RegistrationRequestDTO>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_RegistrationRequestToJson(
+    return _$$_RegistrationRequestDTOToJson(
       this,
     );
   }
 }
 
-abstract class _RegistrationRequest implements RegistrationRequest {
-  const factory _RegistrationRequest(
+abstract class _RegistrationRequestDTO implements RegistrationRequestDTO {
+  const factory _RegistrationRequestDTO(
           {@JsonKey(name: "firstName") required final String firstName,
           @JsonKey(name: "lastName") required final String lastName,
           @JsonKey(name: "middleName") required final String middleName,
           @JsonKey(name: "email") required final String email,
           @JsonKey(name: "password") required final String password}) =
-      _$_RegistrationRequest;
+      _$_RegistrationRequestDTO;
 
-  factory _RegistrationRequest.fromJson(Map<String, dynamic> json) =
-      _$_RegistrationRequest.fromJson;
+  factory _RegistrationRequestDTO.fromJson(Map<String, dynamic> json) =
+      _$_RegistrationRequestDTO.fromJson;
 
   @override
   @JsonKey(name: "firstName")
@@ -252,6 +255,6 @@ abstract class _RegistrationRequest implements RegistrationRequest {
   String get password;
   @override
   @JsonKey(ignore: true)
-  _$$_RegistrationRequestCopyWith<_$_RegistrationRequest> get copyWith =>
+  _$$_RegistrationRequestDTOCopyWith<_$_RegistrationRequestDTO> get copyWith =>
       throw _privateConstructorUsedError;
 }

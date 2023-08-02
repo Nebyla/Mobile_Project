@@ -4,8 +4,8 @@ part 'refresh_token_response_dto.freezed.dart';
 part 'refresh_token_response_dto.g.dart';
 
 @freezed
-class RefreshTokenResponse with _$RefreshTokenResponse {
-  const factory RefreshTokenResponse({
+class RefreshTokenResponseDTO with _$RefreshTokenResponseDTO {
+  const factory RefreshTokenResponseDTO({
     @JsonKey(name: 'message') 
     required String message,
     
@@ -15,8 +15,8 @@ class RefreshTokenResponse with _$RefreshTokenResponse {
     @JsonKey(name: 'refresh_token')
     required String refreshToken,
 
-  }) = _RefreshTokenResponse;
+  }) = _RefreshTokenResponseDTO;
 
-  factory RefreshTokenResponse.fromJson(Map<String, dynamic> json) =>
-      _$RefreshTokenResponseFromJson(json);
+  factory RefreshTokenResponseDTO.fromJson(Map<String, dynamic> json) =>
+      _$RefreshTokenResponseDTOFromJson(json);
 }

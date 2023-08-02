@@ -14,12 +14,12 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-UserEdit _$UserEditFromJson(Map<String, dynamic> json) {
-  return _UserEdit.fromJson(json);
+UserEditRequestDTO _$UserEditRequestDTOFromJson(Map<String, dynamic> json) {
+  return _UserEditRequestDTO.fromJson(json);
 }
 
 /// @nodoc
-mixin _$UserEdit {
+mixin _$UserEditRequestDTO {
   @JsonKey(name: 'firstName')
   String get firstName => throw _privateConstructorUsedError;
   @JsonKey(name: 'lastName')
@@ -29,14 +29,15 @@ mixin _$UserEdit {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $UserEditCopyWith<UserEdit> get copyWith =>
+  $UserEditRequestDTOCopyWith<UserEditRequestDTO> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $UserEditCopyWith<$Res> {
-  factory $UserEditCopyWith(UserEdit value, $Res Function(UserEdit) then) =
-      _$UserEditCopyWithImpl<$Res, UserEdit>;
+abstract class $UserEditRequestDTOCopyWith<$Res> {
+  factory $UserEditRequestDTOCopyWith(
+          UserEditRequestDTO value, $Res Function(UserEditRequestDTO) then) =
+      _$UserEditRequestDTOCopyWithImpl<$Res, UserEditRequestDTO>;
   @useResult
   $Res call(
       {@JsonKey(name: 'firstName') String firstName,
@@ -45,9 +46,9 @@ abstract class $UserEditCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UserEditCopyWithImpl<$Res, $Val extends UserEdit>
-    implements $UserEditCopyWith<$Res> {
-  _$UserEditCopyWithImpl(this._value, this._then);
+class _$UserEditRequestDTOCopyWithImpl<$Res, $Val extends UserEditRequestDTO>
+    implements $UserEditRequestDTOCopyWith<$Res> {
+  _$UserEditRequestDTOCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -79,10 +80,11 @@ class _$UserEditCopyWithImpl<$Res, $Val extends UserEdit>
 }
 
 /// @nodoc
-abstract class _$$_UserEditCopyWith<$Res> implements $UserEditCopyWith<$Res> {
-  factory _$$_UserEditCopyWith(
-          _$_UserEdit value, $Res Function(_$_UserEdit) then) =
-      __$$_UserEditCopyWithImpl<$Res>;
+abstract class _$$_UserEditRequestDTOCopyWith<$Res>
+    implements $UserEditRequestDTOCopyWith<$Res> {
+  factory _$$_UserEditRequestDTOCopyWith(_$_UserEditRequestDTO value,
+          $Res Function(_$_UserEditRequestDTO) then) =
+      __$$_UserEditRequestDTOCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -92,11 +94,11 @@ abstract class _$$_UserEditCopyWith<$Res> implements $UserEditCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_UserEditCopyWithImpl<$Res>
-    extends _$UserEditCopyWithImpl<$Res, _$_UserEdit>
-    implements _$$_UserEditCopyWith<$Res> {
-  __$$_UserEditCopyWithImpl(
-      _$_UserEdit _value, $Res Function(_$_UserEdit) _then)
+class __$$_UserEditRequestDTOCopyWithImpl<$Res>
+    extends _$UserEditRequestDTOCopyWithImpl<$Res, _$_UserEditRequestDTO>
+    implements _$$_UserEditRequestDTOCopyWith<$Res> {
+  __$$_UserEditRequestDTOCopyWithImpl(
+      _$_UserEditRequestDTO _value, $Res Function(_$_UserEditRequestDTO) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -106,7 +108,7 @@ class __$$_UserEditCopyWithImpl<$Res>
     Object? lastName = null,
     Object? middleName = null,
   }) {
-    return _then(_$_UserEdit(
+    return _then(_$_UserEditRequestDTO(
       firstName: null == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
@@ -125,14 +127,14 @@ class __$$_UserEditCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UserEdit implements _UserEdit {
-  const _$_UserEdit(
+class _$_UserEditRequestDTO implements _UserEditRequestDTO {
+  const _$_UserEditRequestDTO(
       {@JsonKey(name: 'firstName') required this.firstName,
       @JsonKey(name: 'lastName') required this.lastName,
       @JsonKey(name: 'middleName') required this.middleName});
 
-  factory _$_UserEdit.fromJson(Map<String, dynamic> json) =>
-      _$$_UserEditFromJson(json);
+  factory _$_UserEditRequestDTO.fromJson(Map<String, dynamic> json) =>
+      _$$_UserEditRequestDTOFromJson(json);
 
   @override
   @JsonKey(name: 'firstName')
@@ -146,14 +148,14 @@ class _$_UserEdit implements _UserEdit {
 
   @override
   String toString() {
-    return 'UserEdit(firstName: $firstName, lastName: $lastName, middleName: $middleName)';
+    return 'UserEditRequestDTO(firstName: $firstName, lastName: $lastName, middleName: $middleName)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_UserEdit &&
+            other is _$_UserEditRequestDTO &&
             (identical(other.firstName, firstName) ||
                 other.firstName == firstName) &&
             (identical(other.lastName, lastName) ||
@@ -169,25 +171,27 @@ class _$_UserEdit implements _UserEdit {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_UserEditCopyWith<_$_UserEdit> get copyWith =>
-      __$$_UserEditCopyWithImpl<_$_UserEdit>(this, _$identity);
+  _$$_UserEditRequestDTOCopyWith<_$_UserEditRequestDTO> get copyWith =>
+      __$$_UserEditRequestDTOCopyWithImpl<_$_UserEditRequestDTO>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UserEditToJson(
+    return _$$_UserEditRequestDTOToJson(
       this,
     );
   }
 }
 
-abstract class _UserEdit implements UserEdit {
-  const factory _UserEdit(
+abstract class _UserEditRequestDTO implements UserEditRequestDTO {
+  const factory _UserEditRequestDTO(
           {@JsonKey(name: 'firstName') required final String firstName,
           @JsonKey(name: 'lastName') required final String lastName,
           @JsonKey(name: 'middleName') required final String middleName}) =
-      _$_UserEdit;
+      _$_UserEditRequestDTO;
 
-  factory _UserEdit.fromJson(Map<String, dynamic> json) = _$_UserEdit.fromJson;
+  factory _UserEditRequestDTO.fromJson(Map<String, dynamic> json) =
+      _$_UserEditRequestDTO.fromJson;
 
   @override
   @JsonKey(name: 'firstName')
@@ -200,6 +204,6 @@ abstract class _UserEdit implements UserEdit {
   String get middleName;
   @override
   @JsonKey(ignore: true)
-  _$$_UserEditCopyWith<_$_UserEdit> get copyWith =>
+  _$$_UserEditRequestDTOCopyWith<_$_UserEditRequestDTO> get copyWith =>
       throw _privateConstructorUsedError;
 }

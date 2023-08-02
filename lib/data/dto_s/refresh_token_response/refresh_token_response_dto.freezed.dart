@@ -14,12 +14,13 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-RefreshTokenResponse _$RefreshTokenResponseFromJson(Map<String, dynamic> json) {
-  return _RefreshTokenResponse.fromJson(json);
+RefreshTokenResponseDTO _$RefreshTokenResponseDTOFromJson(
+    Map<String, dynamic> json) {
+  return _RefreshTokenResponseDTO.fromJson(json);
 }
 
 /// @nodoc
-mixin _$RefreshTokenResponse {
+mixin _$RefreshTokenResponseDTO {
   @JsonKey(name: 'message')
   String get message => throw _privateConstructorUsedError;
   @JsonKey(name: 'access_token')
@@ -29,15 +30,15 @@ mixin _$RefreshTokenResponse {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $RefreshTokenResponseCopyWith<RefreshTokenResponse> get copyWith =>
+  $RefreshTokenResponseDTOCopyWith<RefreshTokenResponseDTO> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $RefreshTokenResponseCopyWith<$Res> {
-  factory $RefreshTokenResponseCopyWith(RefreshTokenResponse value,
-          $Res Function(RefreshTokenResponse) then) =
-      _$RefreshTokenResponseCopyWithImpl<$Res, RefreshTokenResponse>;
+abstract class $RefreshTokenResponseDTOCopyWith<$Res> {
+  factory $RefreshTokenResponseDTOCopyWith(RefreshTokenResponseDTO value,
+          $Res Function(RefreshTokenResponseDTO) then) =
+      _$RefreshTokenResponseDTOCopyWithImpl<$Res, RefreshTokenResponseDTO>;
   @useResult
   $Res call(
       {@JsonKey(name: 'message') String message,
@@ -46,10 +47,10 @@ abstract class $RefreshTokenResponseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$RefreshTokenResponseCopyWithImpl<$Res,
-        $Val extends RefreshTokenResponse>
-    implements $RefreshTokenResponseCopyWith<$Res> {
-  _$RefreshTokenResponseCopyWithImpl(this._value, this._then);
+class _$RefreshTokenResponseDTOCopyWithImpl<$Res,
+        $Val extends RefreshTokenResponseDTO>
+    implements $RefreshTokenResponseDTOCopyWith<$Res> {
+  _$RefreshTokenResponseDTOCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -81,11 +82,11 @@ class _$RefreshTokenResponseCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_RefreshTokenResponseCopyWith<$Res>
-    implements $RefreshTokenResponseCopyWith<$Res> {
-  factory _$$_RefreshTokenResponseCopyWith(_$_RefreshTokenResponse value,
-          $Res Function(_$_RefreshTokenResponse) then) =
-      __$$_RefreshTokenResponseCopyWithImpl<$Res>;
+abstract class _$$_RefreshTokenResponseDTOCopyWith<$Res>
+    implements $RefreshTokenResponseDTOCopyWith<$Res> {
+  factory _$$_RefreshTokenResponseDTOCopyWith(_$_RefreshTokenResponseDTO value,
+          $Res Function(_$_RefreshTokenResponseDTO) then) =
+      __$$_RefreshTokenResponseDTOCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -95,11 +96,12 @@ abstract class _$$_RefreshTokenResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_RefreshTokenResponseCopyWithImpl<$Res>
-    extends _$RefreshTokenResponseCopyWithImpl<$Res, _$_RefreshTokenResponse>
-    implements _$$_RefreshTokenResponseCopyWith<$Res> {
-  __$$_RefreshTokenResponseCopyWithImpl(_$_RefreshTokenResponse _value,
-      $Res Function(_$_RefreshTokenResponse) _then)
+class __$$_RefreshTokenResponseDTOCopyWithImpl<$Res>
+    extends _$RefreshTokenResponseDTOCopyWithImpl<$Res,
+        _$_RefreshTokenResponseDTO>
+    implements _$$_RefreshTokenResponseDTOCopyWith<$Res> {
+  __$$_RefreshTokenResponseDTOCopyWithImpl(_$_RefreshTokenResponseDTO _value,
+      $Res Function(_$_RefreshTokenResponseDTO) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -109,7 +111,7 @@ class __$$_RefreshTokenResponseCopyWithImpl<$Res>
     Object? accessToken = null,
     Object? refreshToken = null,
   }) {
-    return _then(_$_RefreshTokenResponse(
+    return _then(_$_RefreshTokenResponseDTO(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -128,14 +130,14 @@ class __$$_RefreshTokenResponseCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_RefreshTokenResponse implements _RefreshTokenResponse {
-  const _$_RefreshTokenResponse(
+class _$_RefreshTokenResponseDTO implements _RefreshTokenResponseDTO {
+  const _$_RefreshTokenResponseDTO(
       {@JsonKey(name: 'message') required this.message,
       @JsonKey(name: 'access_token') required this.accessToken,
       @JsonKey(name: 'refresh_token') required this.refreshToken});
 
-  factory _$_RefreshTokenResponse.fromJson(Map<String, dynamic> json) =>
-      _$$_RefreshTokenResponseFromJson(json);
+  factory _$_RefreshTokenResponseDTO.fromJson(Map<String, dynamic> json) =>
+      _$$_RefreshTokenResponseDTOFromJson(json);
 
   @override
   @JsonKey(name: 'message')
@@ -149,14 +151,14 @@ class _$_RefreshTokenResponse implements _RefreshTokenResponse {
 
   @override
   String toString() {
-    return 'RefreshTokenResponse(message: $message, accessToken: $accessToken, refreshToken: $refreshToken)';
+    return 'RefreshTokenResponseDTO(message: $message, accessToken: $accessToken, refreshToken: $refreshToken)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RefreshTokenResponse &&
+            other is _$_RefreshTokenResponseDTO &&
             (identical(other.message, message) || other.message == message) &&
             (identical(other.accessToken, accessToken) ||
                 other.accessToken == accessToken) &&
@@ -172,27 +174,28 @@ class _$_RefreshTokenResponse implements _RefreshTokenResponse {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_RefreshTokenResponseCopyWith<_$_RefreshTokenResponse> get copyWith =>
-      __$$_RefreshTokenResponseCopyWithImpl<_$_RefreshTokenResponse>(
-          this, _$identity);
+  _$$_RefreshTokenResponseDTOCopyWith<_$_RefreshTokenResponseDTO>
+      get copyWith =>
+          __$$_RefreshTokenResponseDTOCopyWithImpl<_$_RefreshTokenResponseDTO>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_RefreshTokenResponseToJson(
+    return _$$_RefreshTokenResponseDTOToJson(
       this,
     );
   }
 }
 
-abstract class _RefreshTokenResponse implements RefreshTokenResponse {
-  const factory _RefreshTokenResponse(
+abstract class _RefreshTokenResponseDTO implements RefreshTokenResponseDTO {
+  const factory _RefreshTokenResponseDTO(
           {@JsonKey(name: 'message') required final String message,
           @JsonKey(name: 'access_token') required final String accessToken,
           @JsonKey(name: 'refresh_token') required final String refreshToken}) =
-      _$_RefreshTokenResponse;
+      _$_RefreshTokenResponseDTO;
 
-  factory _RefreshTokenResponse.fromJson(Map<String, dynamic> json) =
-      _$_RefreshTokenResponse.fromJson;
+  factory _RefreshTokenResponseDTO.fromJson(Map<String, dynamic> json) =
+      _$_RefreshTokenResponseDTO.fromJson;
 
   @override
   @JsonKey(name: 'message')
@@ -205,6 +208,6 @@ abstract class _RefreshTokenResponse implements RefreshTokenResponse {
   String get refreshToken;
   @override
   @JsonKey(ignore: true)
-  _$$_RefreshTokenResponseCopyWith<_$_RefreshTokenResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$_RefreshTokenResponseDTOCopyWith<_$_RefreshTokenResponseDTO>
+      get copyWith => throw _privateConstructorUsedError;
 }

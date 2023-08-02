@@ -4,8 +4,8 @@ part 'user_edit_dto.freezed.dart';
 part 'user_edit_dto.g.dart';
 
 @freezed
-class UserEdit with _$UserEdit {
-  const factory UserEdit ({
+class UserEditRequestDTO with _$UserEditRequestDTO {
+  const factory UserEditRequestDTO ({
     @JsonKey(name: 'firstName')
     required String firstName,
 
@@ -15,8 +15,8 @@ class UserEdit with _$UserEdit {
     @JsonKey(name: 'middleName')
     required String middleName
 
-  }) = _UserEdit;
+  }) = _UserEditRequestDTO;
 
-  factory UserEdit.fromJson(Map<String, dynamic> json) =>
-      _$UserEditFromJson(json);
+  factory UserEditRequestDTO.fromJson(Map<String, dynamic> json) =>
+      _$UserEditRequestDTOFromJson(json);
 }

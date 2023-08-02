@@ -4,8 +4,8 @@ part 'registration_request_dto.freezed.dart';
 part 'registration_request_dto.g.dart';
 
 @freezed
-class RegistrationRequest with _$RegistrationRequest {
-  const factory RegistrationRequest({
+class RegistrationRequestDTO with _$RegistrationRequestDTO {
+  const factory RegistrationRequestDTO({
     @JsonKey(name: "firstName") 
     required String firstName,
 
@@ -21,8 +21,8 @@ class RegistrationRequest with _$RegistrationRequest {
     @JsonKey(name: "password") 
     required String password
 
-  }) = _RegistrationRequest;
+  }) = _RegistrationRequestDTO;
 
-  factory RegistrationRequest.fromJson(Map<String, dynamic> json) =>
-      _$RegistrationRequestFromJson(json);
+  factory RegistrationRequestDTO.fromJson(Map<String, dynamic> json) =>
+      _$RegistrationRequestDTOFromJson(json);
 }

@@ -14,35 +14,36 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-RegistrationResponse _$RegistrationResponseFromJson(Map<String, dynamic> json) {
-  return _RegistrationResponse.fromJson(json);
+RegistrationResponseDTO _$RegistrationResponseDTOFromJson(
+    Map<String, dynamic> json) {
+  return _RegistrationResponseDTO.fromJson(json);
 }
 
 /// @nodoc
-mixin _$RegistrationResponse {
+mixin _$RegistrationResponseDTO {
   @JsonKey(name: "message")
   String get message => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $RegistrationResponseCopyWith<RegistrationResponse> get copyWith =>
+  $RegistrationResponseDTOCopyWith<RegistrationResponseDTO> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $RegistrationResponseCopyWith<$Res> {
-  factory $RegistrationResponseCopyWith(RegistrationResponse value,
-          $Res Function(RegistrationResponse) then) =
-      _$RegistrationResponseCopyWithImpl<$Res, RegistrationResponse>;
+abstract class $RegistrationResponseDTOCopyWith<$Res> {
+  factory $RegistrationResponseDTOCopyWith(RegistrationResponseDTO value,
+          $Res Function(RegistrationResponseDTO) then) =
+      _$RegistrationResponseDTOCopyWithImpl<$Res, RegistrationResponseDTO>;
   @useResult
   $Res call({@JsonKey(name: "message") String message});
 }
 
 /// @nodoc
-class _$RegistrationResponseCopyWithImpl<$Res,
-        $Val extends RegistrationResponse>
-    implements $RegistrationResponseCopyWith<$Res> {
-  _$RegistrationResponseCopyWithImpl(this._value, this._then);
+class _$RegistrationResponseDTOCopyWithImpl<$Res,
+        $Val extends RegistrationResponseDTO>
+    implements $RegistrationResponseDTOCopyWith<$Res> {
+  _$RegistrationResponseDTOCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -64,22 +65,23 @@ class _$RegistrationResponseCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_RegistrationResponseCopyWith<$Res>
-    implements $RegistrationResponseCopyWith<$Res> {
-  factory _$$_RegistrationResponseCopyWith(_$_RegistrationResponse value,
-          $Res Function(_$_RegistrationResponse) then) =
-      __$$_RegistrationResponseCopyWithImpl<$Res>;
+abstract class _$$_RegistrationResponseDTOCopyWith<$Res>
+    implements $RegistrationResponseDTOCopyWith<$Res> {
+  factory _$$_RegistrationResponseDTOCopyWith(_$_RegistrationResponseDTO value,
+          $Res Function(_$_RegistrationResponseDTO) then) =
+      __$$_RegistrationResponseDTOCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({@JsonKey(name: "message") String message});
 }
 
 /// @nodoc
-class __$$_RegistrationResponseCopyWithImpl<$Res>
-    extends _$RegistrationResponseCopyWithImpl<$Res, _$_RegistrationResponse>
-    implements _$$_RegistrationResponseCopyWith<$Res> {
-  __$$_RegistrationResponseCopyWithImpl(_$_RegistrationResponse _value,
-      $Res Function(_$_RegistrationResponse) _then)
+class __$$_RegistrationResponseDTOCopyWithImpl<$Res>
+    extends _$RegistrationResponseDTOCopyWithImpl<$Res,
+        _$_RegistrationResponseDTO>
+    implements _$$_RegistrationResponseDTOCopyWith<$Res> {
+  __$$_RegistrationResponseDTOCopyWithImpl(_$_RegistrationResponseDTO _value,
+      $Res Function(_$_RegistrationResponseDTO) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -87,7 +89,7 @@ class __$$_RegistrationResponseCopyWithImpl<$Res>
   $Res call({
     Object? message = null,
   }) {
-    return _then(_$_RegistrationResponse(
+    return _then(_$_RegistrationResponseDTO(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -98,12 +100,12 @@ class __$$_RegistrationResponseCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_RegistrationResponse implements _RegistrationResponse {
-  const _$_RegistrationResponse(
+class _$_RegistrationResponseDTO implements _RegistrationResponseDTO {
+  const _$_RegistrationResponseDTO(
       {@JsonKey(name: "message") required this.message});
 
-  factory _$_RegistrationResponse.fromJson(Map<String, dynamic> json) =>
-      _$$_RegistrationResponseFromJson(json);
+  factory _$_RegistrationResponseDTO.fromJson(Map<String, dynamic> json) =>
+      _$$_RegistrationResponseDTOFromJson(json);
 
   @override
   @JsonKey(name: "message")
@@ -111,14 +113,14 @@ class _$_RegistrationResponse implements _RegistrationResponse {
 
   @override
   String toString() {
-    return 'RegistrationResponse(message: $message)';
+    return 'RegistrationResponseDTO(message: $message)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RegistrationResponse &&
+            other is _$_RegistrationResponseDTO &&
             (identical(other.message, message) || other.message == message));
   }
 
@@ -129,31 +131,32 @@ class _$_RegistrationResponse implements _RegistrationResponse {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_RegistrationResponseCopyWith<_$_RegistrationResponse> get copyWith =>
-      __$$_RegistrationResponseCopyWithImpl<_$_RegistrationResponse>(
-          this, _$identity);
+  _$$_RegistrationResponseDTOCopyWith<_$_RegistrationResponseDTO>
+      get copyWith =>
+          __$$_RegistrationResponseDTOCopyWithImpl<_$_RegistrationResponseDTO>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_RegistrationResponseToJson(
+    return _$$_RegistrationResponseDTOToJson(
       this,
     );
   }
 }
 
-abstract class _RegistrationResponse implements RegistrationResponse {
-  const factory _RegistrationResponse(
+abstract class _RegistrationResponseDTO implements RegistrationResponseDTO {
+  const factory _RegistrationResponseDTO(
           {@JsonKey(name: "message") required final String message}) =
-      _$_RegistrationResponse;
+      _$_RegistrationResponseDTO;
 
-  factory _RegistrationResponse.fromJson(Map<String, dynamic> json) =
-      _$_RegistrationResponse.fromJson;
+  factory _RegistrationResponseDTO.fromJson(Map<String, dynamic> json) =
+      _$_RegistrationResponseDTO.fromJson;
 
   @override
   @JsonKey(name: "message")
   String get message;
   @override
   @JsonKey(ignore: true)
-  _$$_RegistrationResponseCopyWith<_$_RegistrationResponse> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$_RegistrationResponseDTOCopyWith<_$_RegistrationResponseDTO>
+      get copyWith => throw _privateConstructorUsedError;
 }

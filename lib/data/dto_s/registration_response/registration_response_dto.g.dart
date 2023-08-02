@@ -6,14 +6,14 @@ part of 'registration_response_dto.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_RegistrationResponse _$$_RegistrationResponseFromJson(
+_$_RegistrationResponseDTO _$$_RegistrationResponseDTOFromJson(
         Map<String, dynamic> json) =>
-    _$_RegistrationResponse(
+    _$_RegistrationResponseDTO(
       message: json['message'] as String,
     );
 
-Map<String, dynamic> _$$_RegistrationResponseToJson(
-        _$_RegistrationResponse instance) =>
+Map<String, dynamic> _$$_RegistrationResponseDTOToJson(
+        _$_RegistrationResponseDTO instance) =>
     <String, dynamic>{
       'message': instance.message,
     };

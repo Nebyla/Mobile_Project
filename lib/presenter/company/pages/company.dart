@@ -10,6 +10,7 @@ class CompanyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white70,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -55,6 +56,7 @@ class CompanyPage extends StatelessWidget {
                 ],
               ),
             ),
+
             ButtonText(
               onPressed: null,
               text: 'Hiiii',

@@ -14,12 +14,12 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-LoginResponse _$LoginResponseFromJson(Map<String, dynamic> json) {
-  return _LoginResponse.fromJson(json);
+LoginResponseDTO _$LoginResponseDTOFromJson(Map<String, dynamic> json) {
+  return _LoginResponseDTO.fromJson(json);
 }
 
 /// @nodoc
-mixin _$LoginResponse {
+mixin _$LoginResponseDTO {
   @JsonKey(name: "message")
   String get message => throw _privateConstructorUsedError;
   @JsonKey(name: "access_token")
@@ -29,15 +29,15 @@ mixin _$LoginResponse {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $LoginResponseCopyWith<LoginResponse> get copyWith =>
+  $LoginResponseDTOCopyWith<LoginResponseDTO> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $LoginResponseCopyWith<$Res> {
-  factory $LoginResponseCopyWith(
-          LoginResponse value, $Res Function(LoginResponse) then) =
-      _$LoginResponseCopyWithImpl<$Res, LoginResponse>;
+abstract class $LoginResponseDTOCopyWith<$Res> {
+  factory $LoginResponseDTOCopyWith(
+          LoginResponseDTO value, $Res Function(LoginResponseDTO) then) =
+      _$LoginResponseDTOCopyWithImpl<$Res, LoginResponseDTO>;
   @useResult
   $Res call(
       {@JsonKey(name: "message") String message,
@@ -46,9 +46,9 @@ abstract class $LoginResponseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$LoginResponseCopyWithImpl<$Res, $Val extends LoginResponse>
-    implements $LoginResponseCopyWith<$Res> {
-  _$LoginResponseCopyWithImpl(this._value, this._then);
+class _$LoginResponseDTOCopyWithImpl<$Res, $Val extends LoginResponseDTO>
+    implements $LoginResponseDTOCopyWith<$Res> {
+  _$LoginResponseDTOCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -80,11 +80,11 @@ class _$LoginResponseCopyWithImpl<$Res, $Val extends LoginResponse>
 }
 
 /// @nodoc
-abstract class _$$_LoginResponseCopyWith<$Res>
-    implements $LoginResponseCopyWith<$Res> {
-  factory _$$_LoginResponseCopyWith(
-          _$_LoginResponse value, $Res Function(_$_LoginResponse) then) =
-      __$$_LoginResponseCopyWithImpl<$Res>;
+abstract class _$$_LoginResponseDTOCopyWith<$Res>
+    implements $LoginResponseDTOCopyWith<$Res> {
+  factory _$$_LoginResponseDTOCopyWith(
+          _$_LoginResponseDTO value, $Res Function(_$_LoginResponseDTO) then) =
+      __$$_LoginResponseDTOCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -94,11 +94,11 @@ abstract class _$$_LoginResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_LoginResponseCopyWithImpl<$Res>
-    extends _$LoginResponseCopyWithImpl<$Res, _$_LoginResponse>
-    implements _$$_LoginResponseCopyWith<$Res> {
-  __$$_LoginResponseCopyWithImpl(
-      _$_LoginResponse _value, $Res Function(_$_LoginResponse) _then)
+class __$$_LoginResponseDTOCopyWithImpl<$Res>
+    extends _$LoginResponseDTOCopyWithImpl<$Res, _$_LoginResponseDTO>
+    implements _$$_LoginResponseDTOCopyWith<$Res> {
+  __$$_LoginResponseDTOCopyWithImpl(
+      _$_LoginResponseDTO _value, $Res Function(_$_LoginResponseDTO) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -108,7 +108,7 @@ class __$$_LoginResponseCopyWithImpl<$Res>
     Object? accessToken = null,
     Object? refreshToken = null,
   }) {
-    return _then(_$_LoginResponse(
+    return _then(_$_LoginResponseDTO(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -127,14 +127,14 @@ class __$$_LoginResponseCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_LoginResponse implements _LoginResponse {
-  const _$_LoginResponse(
+class _$_LoginResponseDTO implements _LoginResponseDTO {
+  const _$_LoginResponseDTO(
       {@JsonKey(name: "message") required this.message,
       @JsonKey(name: "access_token") required this.accessToken,
       @JsonKey(name: "refresh_token") required this.refreshToken});
 
-  factory _$_LoginResponse.fromJson(Map<String, dynamic> json) =>
-      _$$_LoginResponseFromJson(json);
+  factory _$_LoginResponseDTO.fromJson(Map<String, dynamic> json) =>
+      _$$_LoginResponseDTOFromJson(json);
 
   @override
   @JsonKey(name: "message")
@@ -148,14 +148,14 @@ class _$_LoginResponse implements _LoginResponse {
 
   @override
   String toString() {
-    return 'LoginResponse(message: $message, accessToken: $accessToken, refreshToken: $refreshToken)';
+    return 'LoginResponseDTO(message: $message, accessToken: $accessToken, refreshToken: $refreshToken)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LoginResponse &&
+            other is _$_LoginResponseDTO &&
             (identical(other.message, message) || other.message == message) &&
             (identical(other.accessToken, accessToken) ||
                 other.accessToken == accessToken) &&
@@ -171,26 +171,26 @@ class _$_LoginResponse implements _LoginResponse {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_LoginResponseCopyWith<_$_LoginResponse> get copyWith =>
-      __$$_LoginResponseCopyWithImpl<_$_LoginResponse>(this, _$identity);
+  _$$_LoginResponseDTOCopyWith<_$_LoginResponseDTO> get copyWith =>
+      __$$_LoginResponseDTOCopyWithImpl<_$_LoginResponseDTO>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_LoginResponseToJson(
+    return _$$_LoginResponseDTOToJson(
       this,
     );
   }
 }
 
-abstract class _LoginResponse implements LoginResponse {
-  const factory _LoginResponse(
+abstract class _LoginResponseDTO implements LoginResponseDTO {
+  const factory _LoginResponseDTO(
           {@JsonKey(name: "message") required final String message,
           @JsonKey(name: "access_token") required final String accessToken,
           @JsonKey(name: "refresh_token") required final String refreshToken}) =
-      _$_LoginResponse;
+      _$_LoginResponseDTO;
 
-  factory _LoginResponse.fromJson(Map<String, dynamic> json) =
-      _$_LoginResponse.fromJson;
+  factory _LoginResponseDTO.fromJson(Map<String, dynamic> json) =
+      _$_LoginResponseDTO.fromJson;
 
   @override
   @JsonKey(name: "message")
@@ -203,6 +203,6 @@ abstract class _LoginResponse implements LoginResponse {
   String get refreshToken;
   @override
   @JsonKey(ignore: true)
-  _$$_LoginResponseCopyWith<_$_LoginResponse> get copyWith =>
+  _$$_LoginResponseDTOCopyWith<_$_LoginResponseDTO> get copyWith =>
       throw _privateConstructorUsedError;
 }
