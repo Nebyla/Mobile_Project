@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/ui/ui.dart';
@@ -10,91 +11,59 @@ class CompanyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white70,
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              height: 60, // Высота полоски
-              color: Color.fromRGBO(16, 1, 42, 100), // Цвет полоски
-              child: Row(
-                children: [
-                  IconButton(
-                    icon: Icon(Icons.menu),
-                    onPressed: () {
-                      // Обработка нажатия на иконку меню
-                    },
-                  ),
-                  // Добавьте остальной контент вашего экрана здесь
-                ],
-              ),
-            ),
-            Container(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  IconButton(
-                    icon: FlashNavigationIcon(
-                      color: Colors.yellow,
-                      size: 30,
+      backgroundColor: Colors.grey[50],
+      body: ListView(
+        children: [
+          Column(
+            children: [
+              Container(
+                height: 60,
+                color: Color.fromRGBO(16, 1, 42, 100),
+                child: Row(
+                  children: [
+                    IconButton(
+                      icon: FlashNavigationIcon(
+                        color: Colors.yellow,
+                        size: 32,
+                      ),
+                      onPressed: () {},
                     ),
-                    // iconSize: 30,
-                    onPressed: () {
-                      // Обработка нажатия на иконку меню
-                    },
-                  ),
-                  IconButton(
-                    icon: CompanyNavigationIcon(
-                      color: Colors.yellow,
-                      size: 20,
-                    ),
-                    iconSize: 30,
-                    onPressed: () {
-                      // Обработка нажатия на иконку меню
-                    },
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    IconButton(
+                      icon: Icon(CupertinoIcons.bell_fill),
+                      iconSize: 30,
+                      onPressed: () {},
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.account_circle_rounded),
+                      iconSize: 30,
+                      onPressed: () {},
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 10,),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              TextWidget(text: "Мои Компании",color: Colors.black,fontSize: 22,),
+              SizedBox(height: 5,),
+              TextWidget(text: "Список ваших компаний",color: Colors.black,fontSize: 16,),
+            ],
+          ),
+          SizedBox(height: 25,),
+          CompanyInfoCard(),
 
-            ButtonText(
-              onPressed: null,
-              text: 'Hiiii',
-              fontSize: 15,
-              fontFamily: 'Nexa',
-            ),
-            PrimaryButton(
-              text: 'dewH',
-              onPressed: null,
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 10, left: 10, right: 15),
-              child: Form(
-                child: EmailInputs(onChanged: (value) {}),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 10, left: 10, right: 15),
-              child: Form(
-                child: FioInputs(
-                    onChanged: (value) {},
-                    labelText: "Фамилия",
-                    hintText: "Иванов"),
-              ),
-            ),
-            ManagerCard(),
-            SecondaryButton(
-              text: 'fsgdsdg',
-              onPressed: null,
-            ),
-            TextWidget(
-              text: "gdfgsd",
-              color: Colors.black,
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
-            )
-          ],
-        ),
+        ],
       ),
     );
   }
