@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
+import 'package:super_saler/domain/models/role_model.dart';
 
 class UserModel extends Equatable {
   final int id;

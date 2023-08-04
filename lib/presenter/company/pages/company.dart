@@ -60,7 +60,7 @@ class CompanyPage extends StatelessWidget {
               TextWidget(text: "Список ваших компаний",color: Colors.black,fontSize: 16,),
             ],
           ),
-          SizedBox(height: 25,),
+          SizedBox(height: 24,),
           CompanyInfoCard(),
 
         ],
