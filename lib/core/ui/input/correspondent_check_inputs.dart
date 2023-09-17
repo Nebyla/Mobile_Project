@@ -2,8 +2,9 @@ part of '../ui.dart';
 
 class CorresCheckInputs extends StatelessWidget{
   final void Function(String) onChanged;
+  final String initialValue;
 
-  const CorresCheckInputs({super.key, required this.onChanged});
+  const CorresCheckInputs({super.key, required this.onChanged, this.initialValue = ''});
 
   @override
   Widget build(BuildContext context) {
@@ -11,6 +12,7 @@ class CorresCheckInputs extends StatelessWidget{
       height: 45,
       child: TextFormField(
         autovalidateMode: AutovalidateMode.onUserInteraction,
+        initialValue: initialValue,
         decoration: InputDecoration(
           labelText: "Введите корресп. счёт",
           hintText: "30101810145250000411",

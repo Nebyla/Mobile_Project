@@ -13,22 +13,22 @@ class UserResponseDTO with _$UserResponseDTO {
     required int id,
 
     @JsonKey(name: 'firstName')
-    required String? firstName,
+    required String firstName,
 
     @JsonKey(name: 'lastName')
-    required String? lastName,
+    required String lastName,
 
     @JsonKey(name: 'middleName')
-    required String? middleName,
+    required String middleName,
 
     @JsonKey(name: 'email')
-    required String? email,
+    required String email,
 
     @JsonKey(name: 'approved')
     required bool approved,
 
     @JsonKey(name: 'dateJoined')
-    required String? data,
+    required String data,
 
     @JsonKey(name: 'role')
     required RoleDTO role,

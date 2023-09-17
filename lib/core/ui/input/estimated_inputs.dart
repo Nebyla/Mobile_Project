@@ -2,8 +2,9 @@ part of '../ui.dart';
 
 class EstimatedInputs extends StatelessWidget{
   final void Function(String) onChanged;
+  final String initialValue;
 
-  const EstimatedInputs({super.key, required this.onChanged});
+  const EstimatedInputs({super.key, required this.onChanged, this.initialValue = ''});
 
   @override
   Widget build(BuildContext context) {
@@ -11,6 +12,7 @@ class EstimatedInputs extends StatelessWidget{
       height: 45,
       child: TextFormField(
         autovalidateMode: AutovalidateMode.onUserInteraction,
+        initialValue: initialValue,
         decoration: InputDecoration(
           labelText: "Введите расчётный счёт",
           hintText: "40817810099910004312",

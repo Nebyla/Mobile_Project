@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:super_saler/bloc/check_auth/check_auth_bloc.dart';
-import 'package:super_saler/data/datasources/auth/secure_storage.dart';
-import 'package:super_saler/ui/company.dart';
-import 'package:super_saler/ui/Login.dart';
-import 'package:dio/dio.dart';
-import 'package:super_saler/data/datasources/auth/auth_datasource.dart';
-import 'package:bloc/bloc.dart';
+import 'package:super_saler/presenter/check_auth/bloc/check_auth_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CheckAuth extends StatelessWidget {

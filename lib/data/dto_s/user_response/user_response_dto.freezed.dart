@@ -23,17 +23,17 @@ mixin _$UserResponseDTO {
   @JsonKey(name: 'id')
   int get id => throw _privateConstructorUsedError;
   @JsonKey(name: 'firstName')
-  String? get firstName => throw _privateConstructorUsedError;
+  String get firstName => throw _privateConstructorUsedError;
   @JsonKey(name: 'lastName')
-  String? get lastName => throw _privateConstructorUsedError;
+  String get lastName => throw _privateConstructorUsedError;
   @JsonKey(name: 'middleName')
-  String? get middleName => throw _privateConstructorUsedError;
+  String get middleName => throw _privateConstructorUsedError;
   @JsonKey(name: 'email')
-  String? get email => throw _privateConstructorUsedError;
+  String get email => throw _privateConstructorUsedError;
   @JsonKey(name: 'approved')
   bool get approved => throw _privateConstructorUsedError;
   @JsonKey(name: 'dateJoined')
-  String? get data => throw _privateConstructorUsedError;
+  String get data => throw _privateConstructorUsedError;
   @JsonKey(name: 'role')
   RoleDTO get role => throw _privateConstructorUsedError;
 
@@ -51,12 +51,12 @@ abstract class $UserResponseDTOCopyWith<$Res> {
   @useResult
   $Res call(
       {@JsonKey(name: 'id') int id,
-      @JsonKey(name: 'firstName') String? firstName,
-      @JsonKey(name: 'lastName') String? lastName,
-      @JsonKey(name: 'middleName') String? middleName,
-      @JsonKey(name: 'email') String? email,
+      @JsonKey(name: 'firstName') String firstName,
+      @JsonKey(name: 'lastName') String lastName,
+      @JsonKey(name: 'middleName') String middleName,
+      @JsonKey(name: 'email') String email,
       @JsonKey(name: 'approved') bool approved,
-      @JsonKey(name: 'dateJoined') String? data,
+      @JsonKey(name: 'dateJoined') String data,
       @JsonKey(name: 'role') RoleDTO role});
 
   $RoleDTOCopyWith<$Res> get role;
@@ -76,12 +76,12 @@ class _$UserResponseDTOCopyWithImpl<$Res, $Val extends UserResponseDTO>
   @override
   $Res call({
     Object? id = null,
-    Object? firstName = freezed,
-    Object? lastName = freezed,
-    Object? middleName = freezed,
-    Object? email = freezed,
+    Object? firstName = null,
+    Object? lastName = null,
+    Object? middleName = null,
+    Object? email = null,
     Object? approved = null,
-    Object? data = freezed,
+    Object? data = null,
     Object? role = null,
   }) {
     return _then(_value.copyWith(
@@ -89,30 +89,30 @@ class _$UserResponseDTOCopyWithImpl<$Res, $Val extends UserResponseDTO>
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      firstName: freezed == firstName
+      firstName: null == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      lastName: freezed == lastName
+              as String,
+      lastName: null == lastName
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      middleName: freezed == middleName
+              as String,
+      middleName: null == middleName
           ? _value.middleName
           : middleName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      email: freezed == email
+              as String,
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       approved: null == approved
           ? _value.approved
           : approved // ignore: cast_nullable_to_non_nullable
               as bool,
-      data: freezed == data
+      data: null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       role: null == role
           ? _value.role
           : role // ignore: cast_nullable_to_non_nullable
@@ -139,12 +139,12 @@ abstract class _$$_UserResponseDTOCopyWith<$Res>
   @useResult
   $Res call(
       {@JsonKey(name: 'id') int id,
-      @JsonKey(name: 'firstName') String? firstName,
-      @JsonKey(name: 'lastName') String? lastName,
-      @JsonKey(name: 'middleName') String? middleName,
-      @JsonKey(name: 'email') String? email,
+      @JsonKey(name: 'firstName') String firstName,
+      @JsonKey(name: 'lastName') String lastName,
+      @JsonKey(name: 'middleName') String middleName,
+      @JsonKey(name: 'email') String email,
       @JsonKey(name: 'approved') bool approved,
-      @JsonKey(name: 'dateJoined') String? data,
+      @JsonKey(name: 'dateJoined') String data,
       @JsonKey(name: 'role') RoleDTO role});
 
   @override
@@ -163,12 +163,12 @@ class __$$_UserResponseDTOCopyWithImpl<$Res>
   @override
   $Res call({
     Object? id = null,
-    Object? firstName = freezed,
-    Object? lastName = freezed,
-    Object? middleName = freezed,
-    Object? email = freezed,
+    Object? firstName = null,
+    Object? lastName = null,
+    Object? middleName = null,
+    Object? email = null,
     Object? approved = null,
-    Object? data = freezed,
+    Object? data = null,
     Object? role = null,
   }) {
     return _then(_$_UserResponseDTO(
@@ -176,30 +176,30 @@ class __$$_UserResponseDTOCopyWithImpl<$Res>
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      firstName: freezed == firstName
+      firstName: null == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      lastName: freezed == lastName
+              as String,
+      lastName: null == lastName
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      middleName: freezed == middleName
+              as String,
+      middleName: null == middleName
           ? _value.middleName
           : middleName // ignore: cast_nullable_to_non_nullable
-              as String?,
-      email: freezed == email
+              as String,
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       approved: null == approved
           ? _value.approved
           : approved // ignore: cast_nullable_to_non_nullable
               as bool,
-      data: freezed == data
+      data: null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       role: null == role
           ? _value.role
           : role // ignore: cast_nullable_to_non_nullable
@@ -229,22 +229,22 @@ class _$_UserResponseDTO implements _UserResponseDTO {
   final int id;
   @override
   @JsonKey(name: 'firstName')
-  final String? firstName;
+  final String firstName;
   @override
   @JsonKey(name: 'lastName')
-  final String? lastName;
+  final String lastName;
   @override
   @JsonKey(name: 'middleName')
-  final String? middleName;
+  final String middleName;
   @override
   @JsonKey(name: 'email')
-  final String? email;
+  final String email;
   @override
   @JsonKey(name: 'approved')
   final bool approved;
   @override
   @JsonKey(name: 'dateJoined')
-  final String? data;
+  final String data;
   @override
   @JsonKey(name: 'role')
   final RoleDTO role;
@@ -295,12 +295,12 @@ class _$_UserResponseDTO implements _UserResponseDTO {
 abstract class _UserResponseDTO implements UserResponseDTO {
   const factory _UserResponseDTO(
       {@JsonKey(name: 'id') required final int id,
-      @JsonKey(name: 'firstName') required final String? firstName,
-      @JsonKey(name: 'lastName') required final String? lastName,
-      @JsonKey(name: 'middleName') required final String? middleName,
-      @JsonKey(name: 'email') required final String? email,
+      @JsonKey(name: 'firstName') required final String firstName,
+      @JsonKey(name: 'lastName') required final String lastName,
+      @JsonKey(name: 'middleName') required final String middleName,
+      @JsonKey(name: 'email') required final String email,
       @JsonKey(name: 'approved') required final bool approved,
-      @JsonKey(name: 'dateJoined') required final String? data,
+      @JsonKey(name: 'dateJoined') required final String data,
       @JsonKey(name: 'role') required final RoleDTO role}) = _$_UserResponseDTO;
 
   factory _UserResponseDTO.fromJson(Map<String, dynamic> json) =
@@ -311,22 +311,22 @@ abstract class _UserResponseDTO implements UserResponseDTO {
   int get id;
   @override
   @JsonKey(name: 'firstName')
-  String? get firstName;
+  String get firstName;
   @override
   @JsonKey(name: 'lastName')
-  String? get lastName;
+  String get lastName;
   @override
   @JsonKey(name: 'middleName')
-  String? get middleName;
+  String get middleName;
   @override
   @JsonKey(name: 'email')
-  String? get email;
+  String get email;
   @override
   @JsonKey(name: 'approved')
   bool get approved;
   @override
   @JsonKey(name: 'dateJoined')
-  String? get data;
+  String get data;
   @override
   @JsonKey(name: 'role')
   RoleDTO get role;

@@ -18,7 +18,7 @@ class ExpectationIcon extends StatelessWidget {
         borderRadius: BorderRadius.circular(8.0),
       ),
       child: ConstrainedBox(
-        constraints: BoxConstraints(
+        constraints: const BoxConstraints(
           minHeight: 25,
           minWidth: 25,
         ),

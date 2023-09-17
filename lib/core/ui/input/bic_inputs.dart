@@ -2,8 +2,9 @@ part of '../ui.dart';
 
 class BicInputs extends StatelessWidget{
   final void Function(String) onChanged;
+  final String initialValue;
 
-  const BicInputs({super.key, required this.onChanged});
+  const BicInputs({super.key, required this.onChanged, this.initialValue = ''});
 
   @override
   Widget build(BuildContext context) {
@@ -11,6 +12,7 @@ class BicInputs extends StatelessWidget{
       height: 45,
       child: TextFormField(
         autovalidateMode: AutovalidateMode.onUserInteraction,
+        initialValue: initialValue,
         decoration: InputDecoration(
           labelText: "Введите БИК",
           hintText: "044525974",

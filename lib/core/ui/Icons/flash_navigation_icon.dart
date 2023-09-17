@@ -10,10 +10,12 @@ class FlashNavigationIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Icon(
-      flash,
-      color: color,
-      size: size,
+      return IconButton(
+      icon: Icon(
+        flash,
+        color: color,
+        size: size,
+      ), onPressed: () {  },
     );
   }
 }

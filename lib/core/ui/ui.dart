@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import '../../presenter/company/bloc/company_bloc.dart';
+import '../../presenter/company_settings/bloc/company_settings_bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 
-part 'button/company_create_button.dart';
-part 'button/create_product_button.dart';
-part 'button/login_button.dart';
-part 'button/registration_button.dart';
-part 'button/statistic_button.dart';
+part 'bottom/company_create_button.dart';
+part 'bottom/create_product_button.dart';
+part 'bottom/login_button.dart';
+part 'bottom/registration_button.dart';
+part 'bottom/statistic_button.dart';
 part 'cards/company_info_card.dart';
 part 'cards/managers_card.dart';
 part 'cards/product_card.dart';
@@ -26,12 +29,28 @@ part 'Icons/shop_navigation_icon.dart';
 part 'Icons/person_registration_icon.dart';
 part 'Icons/email_icon.dart';
 part 'Icons/password_icon.dart';
-part 'button/text_button.dart';
-part 'button/primary_button.dart';
-part 'button/secondary_button.dart';
-part 'input/estimated_inputs.dart';
-part 'button/close_icon_button.dart';
+part 'bottom/text_button.dart';
+part 'bottom/primary_button.dart';
+part 'bottom/secondary_button.dart';
+part 'Icons/manager_icon.dart';
+part 'Icons/expectation_icon.dart';
+part 'bottom/setting_company_button.dart';
+part 'Icons/product_icon.dart';
+part 'Icons/update_icon.dart';
+part 'bottom/Venues_button.dart';
 part 'dialog/company_create_dialog.dart';
+part 'bottom/close_icon_button.dart';
+part 'input/estimated_inputs.dart';
+part 'cards/company_card.dart';
+part 'input/serch_inputs.dart';
+part 'cards/basic_info_company.dart';
+part 'cards/legal_address_company.dart';
+part 'input/legal_address_inputs.dart';
+part 'cards/delete_company.dart';
+part 'bottom/delete_company_button.dart';
+part 'dialog/input_dialog.dart';
+part 'dialog/venues_create_dialog.dart';
+
 
 const _kFontFam = 'Navigation_Icon';
 const String? _kFontPkg = null;

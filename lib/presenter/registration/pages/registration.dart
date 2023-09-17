@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../bloc/user_registration_bloc.dart';
 import 'package:flutter/gestures.dart';
-
-import '../bloc/user_registration_bloc/user_registration_bloc.dart';
 
 class RegistrationPage extends StatelessWidget {
   const RegistrationPage({super.key});
@@ -34,6 +33,13 @@ class RegistrationPage extends StatelessWidget {
                   ],
                 );
               },
+            );
+          }
+          else if (state.userError != ''){
+            ScaffoldMessenger.of(context)..hideCurrentSnackBar()..showSnackBar(
+              SnackBar(
+                content: Text(state.userError),
+              ),
             );
           }
         },
